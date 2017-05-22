@@ -27,12 +27,25 @@
 //    b(13);
 
 
+//    function output() {
+//        var arr = new Array();
+//        for(var i = 0; i < 10; i++){
+//            arr[i] = function () {
+//                console.log(i);
+//            }
+//        }
+//        return arr;
+//    }
+//    var p = output();
+//    p[4]();
     function output() {
         var arr = new Array();
-        for(var i = 0; i < 10; i++){
-            arr[i] = function () {
-                console.log(i);
-            }
+            for(var i = 0; i < 10; i++){
+                arr[i] = function (j) {
+                    return function () {
+                        console.log(j);
+                    }
+            }(i)
         }
         return arr;
     }
