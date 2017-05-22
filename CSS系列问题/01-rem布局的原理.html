@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            font-size:40px;
+            min-width: 320px;
+            max-width: 640px;
+            margin:0 auto;
+        }
+        .box{
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: hotpink;
+            transform: translateY(-50%);
+            position: absolute;
+            top:50%;
+        }
+    </style>
+</head>
+<body><div class="box"></div>
+<script>
+    'use strict';
+    //    获取根目录
+    var oHtml = document.documentElement;
+    console.log(oHtml);
+    var getSize = function () {
+    //    获取屏幕的宽度
+        var screenWidth = oHtml.offsetWidth;
+        if(screenWidth >= 640){
+            oHtml.style.fontSize = '34.133';
+        }else if(screenWidth <= 320){
+            oHtml.style.fontSize = '17.067';
+        }else {
+            oHtml = screenWidth/(750/40)+'px';
+        }
+    }
+    getSize();
+
+    window.addEventListener('resize',getSize);
+</script>
+</body>
+</html>
