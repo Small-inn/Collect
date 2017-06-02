@@ -34,6 +34,14 @@
         return arr.sort(function (a, b) {return a - b})
     }
     console.log(removerepeat([1, 2, 2, 2, 3, 4, 45, 5, 67, 7, 8, 89, 7, 56, 4, 3, 3, 2, 1]));
+
+//    ES6方法
+    "use strict";
+    var unique = function (arr) {
+        return Array.from(new Set(arr))
+    }
+
+    console.log(unique([1, 2, 2, 2, 3, 4, 45, 5, 67, 7, 8, 89, 7, 56, 4, 3, 3, 2, 1]));
 </script>
 </body>
 </html>
