@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+    * 需求分析：
+    * 歌曲的增、删、改、查
+    * */
+    var songList = [
+        {songName:"精忠报国", singer:"解放军"},
+        {songName:"霸王别姬", singer:"八路军"},
+        {songName:"鬼子进村", singer:"皇协军"}
+        ]
+
+//   增
+    var add = function (song) {
+        songList.push(song)
+    }
+
+//   删
+   var del = function (songName) {
+       songList.forEach(function (value,index,arr) {
+           if(arr[index].songName == songName){
+               arr.splice(index,1);
+           }else {
+               console.log('对不起，删除的歌曲不存在');
+           }
+       })
+   }
+//   改
+    var update = function (songName,singer) {
+        songList.forEach(function (value,index,arr) {
+            if(arr[index].songName == songName){
+                arr[index].singer = singer
+            }else {
+                console.log('对不起，修改的歌曲不存在');
+            }
+        })
+    }
+//   查
+    var sel = function (songName) {
+        songList.forEach(function (value,index,arr) {
+            if(arr[index].songName == songName){
+                return arr[index]
+            }
+        })
+    }
+    console.log(songList);
+</script>
+</body>
+</html>
