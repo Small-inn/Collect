@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="box" id="app">
+    {{name}}
+    <span v-bind:title="message" style="display: block;width:50px;height:50px;background-color:hotpink;">
+
+    </span>
+
+    <span v-on:click="reverse" style="display: block;margin-top:20px;width:50px;height:50px;background-color:hotpink;">
+        {{name}}
+    </span>
+
+    <input type="text" v-model="info">
+    <p>{{info}}</p>
+
+
+    <ul>
+        <todos v-for="item in list" v-bind:todo="item"></todos>
+    </ul>
+</div>
+<script src="./vue.js"></script>
+<script>
+
+    Vue.component('todos',{
+        props:['todo'],
+        template:'<li>{{todo.text}}</li>'
+    })
+
+
+    var app = new Vue({
+        el:'#app',
+        data:{
+            name:'liuxie',
+            age:18,
+            message:'页面加载于' + new Date(),
+            info:'',
+            list:[
+                { text: '蔬菜' },
+                { text: '奶酪' },
+                { text: '随便其他什么人吃的东西' }
+                ]
+        },
+        methods:{
+            reverse:function () {
+                this.name = this.name.split('').reverse().join('')
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>
