@@ -27,9 +27,18 @@
     </style>
 </head>
 <body>
+<!--
+需求：
+1.实现列表的删除功能
+2.实现增加功能
+3.实现关键字搜索功能(过滤功能)
+4.实现键盘enter按下事件的添加功能
+5.v-on的默认按键修饰符
+6.自定义指令
+-->
 <div id="app">
-    <input type="text" v-model="productId"><input type="text" v-model="productName" @keydown.enter="add()"><input type="button" value="添加品牌" @click="add()">
-    <input type="text" v-model="seachVal">
+    <input type="text" v-model="productId" v-color color-name="red"><input type="text" v-model="productName" @keydown.enter="add()"><input type="button" value="添加品牌" @click="add()">
+    <input type="text" v-model="seachVal" v-focus>
     <table>
         <tr>
             <th>编号</th>
@@ -47,7 +56,20 @@
 </div>
 <script src="./vue1028.js"></script>
 <script>
-    var vm = new Vue({
+
+    //定义一个v-focus的自定的指令
+    Vue.directive('focus',function () {
+        this.el.focus()
+    });
+//    自定义一个带参数的指令
+    Vue.directive('color',{
+        parmas:['colorName'],
+        bind:function () {
+        var cName = this.parmas.colorName;
+        this.el.style.color = cName;
+    }
+    })
+   new Vue({
         el: '#app',
         data: {
            list:[
