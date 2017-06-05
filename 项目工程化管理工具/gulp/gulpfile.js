@@ -37,9 +37,13 @@ gulp.task('html',function(){
 
 // watch监听文件的变化
 // 第一个参数是监听的文件名，第二个参数任务名
-
 gulp.task('watch',function(){
     gulp.watch(['./index.html','./css','./src/index.js'],['script','css','html'])
+})
+
+// run方法
+gulp.task('run',function(){
+    gulp.run('script','html','css')
 })
 
 

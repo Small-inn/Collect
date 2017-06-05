@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <style>
+        input{
+            margin-left: 30px;
+        }
+        table{
+            margin:30px auto;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        table tr th,td{
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        table th{
+            color: #ffffff;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="productId"><input type="text" v-model="productName" @keydown.enter="add()"><input type="button" value="添加品牌" @click="add()">
+    <input type="text" v-model="seachVal">
+    <table>
+        <tr>
+            <th>编号</th>
+            <th>品牌名称</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        <tr v-for="item in list | filterBy seachVal in 'name' " track-by="$index">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.ctime}}</td>
+            <td><a href="#" @click="del($index)">删除</a></td>
+        </tr>
+    </table>
+</div>
+<script src="./vue1028.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+           list:[
+               {id:1,name:'宝马',ctime:new Date()},
+               {id:2,name:'奔驰',ctime:new Date()},
+               {id:3,name:'奥迪',ctime:new Date()}
+           ],
+            productId:'',
+            productName:'',
+            seachVal:''
+        },
+        methods: {
+            del:function ($index) {
+                this.list.splice($index,1)
+            },
+            add:function (e) {
+//                下面的这段代码用'@keydown.enter="add()"'
+//                if(e.keyCode != 13){
+//                    return
+//                }
+//                拿到输入的值
+                var productObj = {id:this.productId,name:this.productName,ctime:new Date()}
+
+                this.list.push(productObj)
+
+                this.productId = ''
+                this.productName = ''
+            }
+        },
+        computed: {}
+    })
+</script>
+</body>
+</html>
