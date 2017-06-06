@@ -8,7 +8,7 @@
  *
  */
 /**
- * window - jQuery EasyUI
+ * window - jQuery easyui
  * 
  * Dependencies:
  * 	 panel

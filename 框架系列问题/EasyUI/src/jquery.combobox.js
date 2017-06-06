@@ -8,7 +8,7 @@
  *
  */
 /**
- * combobox - jQuery EasyUI
+ * combobox - jQuery easyui
  * 
  * Dependencies:
  *   combo

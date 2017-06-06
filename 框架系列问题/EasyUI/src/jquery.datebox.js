@@ -8,7 +8,7 @@
  *
  */
 /**
- * datebox - jQuery EasyUI
+ * datebox - jQuery easyui
  * 
  * Dependencies:
  * 	 calendar

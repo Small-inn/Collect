@@ -8,7 +8,7 @@
  *
  */
 /**
- * form - jQuery EasyUI
+ * form - jQuery easyui
  * 
  */
 (function($){
