@@ -14,14 +14,17 @@
     </script>
 </head>
 <body>
-<div id="box" style="width: 100px;height: 100px; border: 1px solid #ccc"></div>
+<div id="box" style="width: 400px;height: 200px;">
+    <div title="tab1">tab1</div>
+    <div title="tab2">tab2</div>
+    <div title="tab3">tab3</div>
+</div>
 <script>
     $(function () {
-        $('#box').resizable({
-            disable:true,
-            maxWidth:800,
-            maxHeight:300,
-            edge:5
+        $('#box').tabs({
+            plain:true,
+            fit:true,
+            border:true
         })
     })
 </script>
