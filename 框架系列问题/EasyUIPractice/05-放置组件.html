@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+    <!--<div id="dd" class="easyui-droppable" data-options="accept:'#box' " style="width: 600px;height: 400px; background-color:black;"></div>-->
+    <!--<div id="box" class="easyui-draggable" style="width: 100px;height: 100px;background-color:hotpink;">-->
+    <div id="dd" style="width: 600px;height: 400px; background-color:black;"></div>
+    <div id="box" class="easyui-draggable" style="width: 100px;height: 100px;background-color:hotpink;">
+        <div id="pox">内容部分</div>
+    </div>
+    <script>
+        $(function () {
+//            默认
+            $.fn.droppable.defaults.disable = true;
+            $('#dd').droppable({
+                accept:'#box',
+//                事件列表
+                onDragEnter:function (e,source) {
+                    console.log(source);
+                    $(this).css('background','blue')
+                }
+            })
+//            方法列表
+            console.log($('#dd').droppable('options'));
+            $('#dd').droppable('disable');
+            $('#dd').droppable('enable');
+            $('#box').draggable({
+
+            })
+        })
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@
  *
  */
 /**
- * progressbar - jQuery EasyUI
+ * progressbar - jQuery easyui
  * 
  * Dependencies:
  * 	 none

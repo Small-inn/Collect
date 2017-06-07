@@ -8,7 +8,7 @@
  *
  */
 /**
- * accordion - jQuery EasyUI
+ * accordion - jQuery easyui
  * 
  * Dependencies:
  * 	 panel

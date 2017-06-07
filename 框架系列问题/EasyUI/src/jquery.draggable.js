@@ -8,7 +8,7 @@
  *
  */
 /**
- * draggable - jQuery EasyUI
+ * draggable - jQuery easyui
  * 
  */
 (function($){
