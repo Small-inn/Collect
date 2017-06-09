@@ -28,9 +28,12 @@
 <script>
     $(function () {
         $('#box').combo({
-            required:true
+            required:true,
+//            onShowPanel:function () {
+//                alert(111)
+//            }
         })
-//        console.log($('#box').combo('panel'));
+        console.log($('#box').combo('panel'));
         $('#food').appendTo($('#box').combo('panel'))
 
         $('#food input').click(function(){

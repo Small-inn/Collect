@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<table id="tb">
+
+</table>
+<div id="box" style="padding: 5px;">
+    <div>
+        <a href="#" class="easyui-linkbutton" plain="true" iconCls = 'icon-add'>添加</a>
+        <a href="#" class="easyui-linkbutton">修改</a>
+        <a href="#" class="easyui-linkbutton">删除</a>
+    </div>
+    <div style="padding: 5px 0 0 5px; background: #ccc;">
+        <label for="user">查询账号：</label>
+        <input type="text" name="user" style="width:100px;height: 20px;margin: 0;box-sizing: content-box;">
+        <label for="dateForm">查询时间从：</label>
+        <input type="text" name="dateForm" class="easyui-datebox" style="width:100px;">
+        <label for="dateTo">到：</label>
+        <input type="text" name="dateTo" class="easyui-datebox" style="width:100px;">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-search" onclick="obj.search();">查询</a>
+    </div>
+</div>
+<script>
+    $(function () {
+        obj = {
+            search :function () {
+                $('#box').datagrid('load',{
+                    user:$.trim($('input[name="user"]').val()),
+                    dateForm:$.trim($('input[name="dateForm"]').val()),
+                    dateTo:$.trim($('input[name="dateTo"]').val())
+                })
+            },
+            add:function () {
+                $('#box').datagrid('insertRow',{
+
+                })
+            }
+        };
+        $('#tb').datagrid({
+//          panel组件的属性
+            width:600,
+            title:'用户列表',
+            iconCls:'icon-search',
+//          样式操作
+            striped:true,
+            nowrap:true,
+            loadMsg:"努力加载中。。。 ",
+            rownumbers:true,
+//            singleSelect:false,
+//            showHeder:true,
+//            showFooter:true,
+//          一般配合列的width和fixed使用
+            fitColumns:true,
+//            scrollbarSize:30,
+            rowStyler:function(index,row){
+                if(row.user == '蜡笔小新'){
+                    return 'background-color:hotpink';
+                }
+            },
+//          请求地址
+            url:'content.json',
+
+            columns:[[
+                {
+//              列属性
+                field:'user',
+                title:'账号',
+                width:100,
+//              fixed:true,
+//              列排序
+//                sortable:true,
+                align:'center',
+//                halign:'center',
+//                resizeable:true,
+//                hidden:false,
+                formatter:function(value,row,index){
+                    return '['+value+']'
+                },
+
+                },
+                {
+                field:'email',
+                title:'邮箱',
+                sortable:true,
+                width:100,
+                },
+                {
+                field:'date',
+                title:'注册时间',
+                sortable:true,
+                width:100,
+                }
+            ]],
+            toolbar: '#box',
+//          分页功能
+            pagination:true,
+            pageSize:10,
+            pageList:[10,20,30,40,50],
+            pageNumber: 1,
+            pagePosition:'bottom',
+//          行属性排序
+            sortName:'time',
+            sortOrder:'DESC',
+//          当前排序
+//            remoteSort:false,
+//          自定义排序
+            sorter:function (a,b) {
+                return a - b
+            },
+//          请求的默认方式
+            method:'post',
+            queryParams:{
+                id: 1
+            },
+        })
+    })
+</script>
+</body>
+</html>
