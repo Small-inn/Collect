@@ -14,17 +14,65 @@
     </script>
 </head>
 <body>
-<div id="box" style="width: 400px;height: 200px;">
-    <div title="tab1">tab1</div>
-    <div title="tab2">tab2</div>
-    <div title="tab3">tab3</div>
+<div id="box" style="width: 500px;height: 600px;">
+    <div title="tab1" data-options="closable:true">tab1</div>
+    <div title="tab2" data-options="closable:true,selected:true">tab2</div>
+    <div title="tab3" data-options="closable:true">tab3</div>
 </div>
 <script>
     $(function () {
+        /*
+         * 依赖于面板组件：panel
+         * */
         $('#box').tabs({
-            plain:true,
-            fit:true,
-            border:true
+            /*
+             * 属性
+             * */
+//            plain:true,
+//            fit:true,
+//            border:true,
+//            tabWidth:300,
+//           点击一下滚动的距离，使用该属性要先tabwidth必须设置
+//            scrollIncrement:100,
+//           滚动的时间
+//            scrollDuration:1000,
+            tools:[{
+                iconCls:'icon-add',
+                handler:function () {
+                    alert(11)
+                }
+            }],
+            toolPosition:'top',
+
+//            tabPosition:'left',
+
+            showHeader:true,
+            /*
+             * 事件,onAdd,onLoad,onUpdates事件要写方法是才能用
+             * */
+//            onSelect:function (title,index) {
+//                alert(title + '-' + index)
+//            },
+//            onUnselect:function (title,index) {
+//                alert(title + '-' + index)
+//            },
+            onBeforeClose:function (title,index) {
+                alert(title + '-' + index)
+            },
+
+        })
+
+        console.log($('#box').tabs('options'));
+
+        /*
+         * 方法
+         * */
+        $('#box').tabs('add',{
+            id:'#bbbb',
+            title:'新建面板',
+            closable:true,
+            content:'这是一个新建的面板',
+            iconCls:'icon-edit',
         })
     })
 </script>
