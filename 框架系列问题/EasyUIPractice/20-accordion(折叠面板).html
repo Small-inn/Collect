@@ -15,14 +15,44 @@
 </head>
 <body>
 <div id="box" style="width: 400px;height: 200px;">
-
+    <div title="accordion1">1</div>
+    <div title="accordion2">2</div>
+    <div title="accordion3">3</div>
 </div>
 <script>
     $(function () {
         $('#box').accordion({
-            width:'400px',
-            height:'500px',
-            fit:true,
+            /*
+            * 属性：
+            * */
+//            width:'400px',
+//            高度不定死，自适应
+//            height:'500px',
+            fit:false,
+            animate:true,
+            /*
+            *
+            * 事件：
+            * */
+//            onSelect:function () {
+//                alert(111)
+//            }
+        }).hide();
+        /*
+         * 方法：
+         * */
+        console.log($.fn.accordion.defaults.width);
+        $(document).click(function () {
+           $('#box').accordion().show();
+           $('#box').accordion('resize')
+       })
+
+        $('#box').accordion('add',{
+            title: 'New Title',
+            content: 'New Content',
+            selected: false,
+            collapsible:true,
+            selected:true,
         })
     })
 </script>

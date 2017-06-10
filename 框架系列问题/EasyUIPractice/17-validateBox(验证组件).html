@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<input type="email" id="email">
+<script>
+    $(function () {
+//        自定义验证机制:检查密码和重新输入密码是否相同
+        $.extend($.fn.validatebox.defaults.rules, {
+            equals: {
+                validator: function(value,param){
+                    return value == $(param[0]).val();
+                },
+                message: 'Field do not match.'
+            }
+        });
+//        自定义验证机制:限制长度
+        $.extend($.fn.validatebox.defaults.rules,{
+           minLength:{
+                validator:function (value,param) {
+                    return value.length >= param[0];
+                },
+               message: '请输入一个不小于{0}的字符',
+           }
+        })
+        $('#email').validatebox({
+            required:true,
+            validType:['email','length[5,20]'],
+//            missingMessage:'请输入你的邮箱',
+//            invalidMessage:'输入的格式不正确',
+//            tipPosition:'right',
+        })
+    })
+</script>
+</body>
+</html>

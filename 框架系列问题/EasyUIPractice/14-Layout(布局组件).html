@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<div id="box">
+    <div style="height: 100px;" data-options="
+    region:'north',
+    title:'上北',
+    border:true,
+    split:true,
+    iconCls:'icon-save',
+    href:'conte.json',
+    collapsible:false,
+                "></div>
+    <div data-options="region:'south',title:'下南'" style="height: 100px;"></div>
+    <div data-options="region:'west',title:'左西'" style="width: 100px;"></div>
+    <div data-options="region:'east',title:'右东'" style="width: 100px;"></div>
+    <div data-options="region:'center',title:'中间'"></div>
+</div>
+<script>
+    $(function () {
+        $('#box').layout({
+            width:'600px',
+            height:'400px',
+        }).css('display','none')
+        
+        $(document).click(function () {
+            $('#box').layout().css('display','block')
+            $('#box').layout('resize')
+        })
+    })
+</script>
+</body>
+</html>
