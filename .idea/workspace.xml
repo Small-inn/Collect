@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73e496b0-d6c5-49dd-9c8c-7bd53289070e" name="Default" comment="coding in work">
+    <list default="true" id="73e496b0-d6c5-49dd-9c8c-7bd53289070e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/20-accordion(折叠面板).html" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/20-accordion(折叠面板).html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -543,11 +542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497108778133</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="coding in work">
+      <created>1497109326514</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1497109326514</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38631000" />
+    <option name="totallyTimeSpent" value="38645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,9 +603,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="coding in work" />
     <MESSAGE value="coding in home" />
-    <option name="LAST_COMMIT_MESSAGE" value="coding in home" />
+    <MESSAGE value="coding in work" />
+    <option name="LAST_COMMIT_MESSAGE" value="coding in work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
