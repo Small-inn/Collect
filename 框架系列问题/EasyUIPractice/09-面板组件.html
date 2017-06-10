@@ -15,7 +15,7 @@
 </head>
 <body>
 <div id="box" title="My panel">
-
+    <p>敲代码是一种快乐！</p>
 </div>
 <script>
     $(function () {
@@ -23,6 +23,8 @@
         $('#box').panel({
             width:500,
             height:300,
+            style:{borderWidth:6},
+            fit:false,
             tools:[{
                 iconCls:'icon-add',
                 handler:function () {alert('new')}
@@ -31,24 +33,24 @@
                 console.log(11);
             }
         });
-//        缩放面板
-        $('#box').panel('resize',{
-            width:100,
-            height:100
-        })
-//        移动面板
-//        $('#box').panel('move',{
-//            left:400,
-//            top:400
+////        缩放面板
+//        $('#box').panel('resize',{
+//            width:100,
+//            height:100
 //        })
-//        折叠面板
-        $('#box').panel('collapse',{
-            animate:0
+//        移动面板
+        $('#box').panel('move',{
+            left:100,
+            top:200
         })
+////        折叠面板
+//        $('#box').panel('collapse',{
+//            animate:0
+//        })
 //        展开面板
-        $('#box').panel('expand',{
-            animate:{width:200,height:200}
-        })
+//        $('#box').panel('expand',{
+//            animate:{width:200,height:200}
+//        })
     })
 </script>
 </body>
