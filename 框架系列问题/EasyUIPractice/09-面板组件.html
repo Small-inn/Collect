@@ -14,43 +14,76 @@
     </script>
 </head>
 <body>
-<div id="box" title="My panel">
-    <p>敲代码是一种快乐！</p>
+<div id="box">
+
 </div>
+
+<!--自定义-->
+<!--<div id="tt">-->
+<!--<a class="icon-add" onclick="javvscipt:alert('add')"></a>-->
+<!--<a class="icon-edit"></a>-->
+<!--<a class="icon-cut"></a>-->
+<!--</div>-->
 <script>
     $(function () {
-//        创建面板
         $('#box').panel({
+            /**
+             * 属性：
+             * */
+            title:'我的面板',
             width:500,
             height:300,
-            style:{borderWidth:6},
-            fit:false,
-            tools:[{
-                iconCls:'icon-add',
-                handler:function () {alert('new')}
-            }],
-            onMove:function (left,top) {
-                console.log(11);
-            }
-        });
-////        缩放面板
-//        $('#box').panel('resize',{
-//            width:100,
-//            height:100
-//        })
-//        移动面板
-        $('#box').panel('move',{
+            iconCls:'icon-search',
             left:100,
-            top:200
+            top:100,
+//           定义css样式
+            cls: 'a',
+            headerCls:'b',
+            bodyCls:'c',
+            style:{
+                'min-height':'300px',
+            },
+//           fit:true,
+//           border:false,
+//           noheader:true,
+            content:'面板内容',
+//         按钮
+            collapsiable:true,
+            collapsible:true,
+            minimizable:true,
+            maximizable:true,
+            closable:true,
+//         自定义按钮,结合上面的#tt
+//         tools:'#tt',
+//         数组写法
+            tools:[{
+                iconCls:'icon-help',
+                handler:function () {
+                    alert('help')
+                }
+            }],
+//           读取远程数据
+//           href:'data.json',
+//           loadingMessage:'正在加载中',
+
+            /**
+             * 事件：(详情参考官网)
+             * */
+//           onBeforeLoad:function () {
+//               alert('远程加载之前触发!')
+//               return false
+//           },
+//           onLoad:function () {
+//                alert('加载时触发!')
+//           },
         })
-////        折叠面板
-//        $('#box').panel('collapse',{
-//            animate:0
-//        })
-//        展开面板
-//        $('#box').panel('expand',{
-//            animate:{width:200,height:200}
-//        })
+        /**
+         * 方法：详情参官网
+         * */
+//  查看方法：
+        console.log($('#box').panel('options'));
+        $('#box').panel('setTitle','我的面板组件')
+        $("#box").panel('panel').css('position','absolute')
     })
 </script>
 </body>
