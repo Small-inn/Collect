@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <script type="text/javascript" src="../easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js">
+    </script>
+    <style>
+        .textbox{
+            height: 20px;
+            margin: 0;
+            padding:0 2px;
+            box-sizing:content-box;
+        }
+    </style>
+</head>
+<body>
+<table id="box"></table>
+<div id="tb" style="padding: 5px;">
+    <div style="margin-bottom: 5px">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="obj.add()">添加</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" style="display: none;" id="save" onclick="obj.save()">保存</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-redo" plain="true" style="display: none;" id="redo" onclick="obj.redo()">取消编辑</a>
+    </div>
+    <div style="padding: 0 0 0 7px; color: #333;">
+        查询账号: <input type="text" class="textbox" name="user" style="width: 110px">
+        创建时间从: <input type="text" class="easyui-datebox" editable="false" name="date_from" style="width: 110px">
+        到：<input type="text" class="easyui-datebox" editable="false" name="date_to" style="width: 110px">
+        <a href="#" style="margin-left: 20px" class="easyui-linkbutton"  iconCls="icon-search" onclick="obj.search()">查询</a>
+    </div>
+</div>
+<script>
+    $(function () {
+
+        obj = {
+            search:function () {
+                $('#box').datagrid('load',{
+                    user:$.trim($('input[name="user]').val()),
+                    date_from:$.trim($('input[name="date_from]').val()),
+                    date_to:$.trim($('input[name="date_to]').val()),
+                })
+            },
+            add:function () {
+                $('#save,#redo').show();
+                if(!this.editRow){
+                    $('#box').datagrid('endEdit',this.editRow)
+                }else {
+                    $('#box').datagrid('insertRow',{
+                        index:0,
+                        row:{
+
+                        }
+                    });
+                }
+//                将添加的可编辑状态
+                $('#box').datagrid('beginEdit',0)
+                this.editRow = true;
+            },
+            save:function () {
+
+//                结束编辑状态
+                $('#box').datagrid('endEdit',0)
+            },
+            redo:function () {
+                $('#save,#redo').hide();
+                this.editRow = false;
+                $('#box').datagrid('rejectChanges');
+            }
+        };
+
+        $('#box').datagrid({
+            toolbar:'#tb',
+            url:'../content.json',
+            width:600,
+            title:'列表',
+            iconCls:'icon-search',
+            striped:true,
+            nowrap:false,
+            fitColumns:true,
+            loadMsg:'努力加载中。。。。',
+            rownumbers:true,
+            singleSelect:true,
+            rowStyler:function (index,row) {
+                  if(row.user == ''){
+                      return row.user;
+                  }
+            },
+            columns:[[
+                {field:'user',title:'账号',width:100,align:'center',sortable:true,resizable:false,editor:{
+                    type:'text',
+                    options:{
+                        required:true,
+                        validType:'email',
+                    },
+
+                }},
+                {field:'email',title:'邮件',width:100,align:'center',sortable:true,editor:{
+                    type:'validatebox',
+                    options:{
+                        required:true,
+                        validType:'email',
+                    },
+
+                }},
+                {field:'date',title:'注册时间',width:100,align:'center',sortable:true,editor:{
+                    type:'datebox',
+                    options:{
+                        required:true,
+                        validType:'email',
+                    },
+
+                }}
+            ]],
+            pagination:true,
+            pageSize:5,
+            pageList:[5,10,15,20],
+            pageNumber:2,
+            pagePosition:'bottom',
+            sortName:'date',
+            sortOrder:'DESC',
+//            保存成功触发
+            onAfterEdit:function (rowindex,rowdata,changes) {
+                $('#save,#redo').hide();
+                obj.editRow = false;
+                console.log(rowdata);
+            },
+//            双击
+            onDblClickRow:function (rowindex,rowdata) {
+                
+            }
+        })
+    })
+</script>
+</body>
+</html>

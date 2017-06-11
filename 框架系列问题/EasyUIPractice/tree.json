@@ -1,0 +1,26 @@
+[
+  {
+    "text":"系统管理",
+    "state":"closed",
+    "children":[
+      {
+        "text":"主机信息",
+        "state":"closed",
+        "children":[
+          {"text":"版本信息"},
+          {"text":"数据库信息"}
+        ]
+      },
+      {"text":"更新信息"},
+      {"text":"程序信息"}
+    ]
+  },
+  {
+    "text":"会员管理",
+    "state":"closed",
+    "children":[
+      {"text":"更新信息"},
+      {"text":"程序信息"}
+    ]
+  }
+]

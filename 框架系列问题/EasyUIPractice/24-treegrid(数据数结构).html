@@ -14,32 +14,31 @@
     </script>
 </head>
 <body>
-<ul id="box">
-
-</ul>
+<table id="box" style="width:380px;height: 150px;"></table>
 <script>
     $(function () {
-        $('#box').tree({
-            url:'tree.json',
+        $('#box').treegrid({
+            url:'treegrid.json',
+            idField:'id',
+            treeField:'name',
             animate:true,
-            checkbox:false,
-            dnd:true,
-//            formatter:function (node) {
-//                console.log(node);
-//                console.log(node.text);
-//            }
-            lines:true,
-            onLoadSuccess:function (node,data) {
-                console.log(data);
-                if(data){
-                    $(data).each(function (index,value) {
-                        if(this.state == 'closed'){
-                            $('#box').tree('expandAll')
-                        }
-                    })
+            columns:[[
+                {
+                    title:'菜单名称',
+                    field:'name',
+                    width:180,
+                },
+                {
+                    title:'创建时间',
+                    field:'date',
+                    width:180,
                 }
-            }
+            ]]
         })
+
+
+        console.log($('#box').treegrid('options'));
+        $('#box').treegrid('collapseAll')
     })
 </script>
 </body>

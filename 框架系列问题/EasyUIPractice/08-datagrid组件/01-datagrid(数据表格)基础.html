@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <script type="text/javascript" src="../easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<table id="box"></table>
+<script>
+    $(function () {
+        $('#box').datagrid({
+            url:'../content.json',
+            width:500,
+            title:'列表',
+            columns:[[
+                {field:'user',title:'账号',width:'100px',align:'center',sortable:true},
+                {field:'email',title:'邮件',width:'200px',align:'center',sortable:true},
+                {field:'date',title:'注册时间',width:'200px',align:'center',sortable:true}
+            ]],
+            pagination:true,
+            pageSize:5,
+            pageList:[5,10,15,20],
+            pageNumber:2,
+            pagePosition:'bottom',
+            sortName:'date',
+            sortOrder:'DESC',
+        })
+    })
+</script>
+</body>
+</html>

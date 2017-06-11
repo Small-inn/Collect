@@ -28,7 +28,9 @@
 <script>
     $(function () {
         $('#ff').form('submit',{
-            url:'2.php',
+            url:'url.php',
+            url:'tree.json',
+//          提交之前执行
             onSubmit:function (param) {
                 param.code = 1;
                 alert(param.code);
@@ -38,6 +40,9 @@
                 alert(data);
             }
         });
+        /*
+        * 方法：
+        * */
         $('#ff').form('load',{
             name:'haha',
             email:'haha@163.com',
