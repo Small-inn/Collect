@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73e496b0-d6c5-49dd-9c8c-7bd53289070e" name="Default" comment="coding in home">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/08-datagrid组件/01-datagrid(数据表格)基础.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/08-datagrid组件/02-datagrid(数据表格)样式设置.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/08-datagrid组件/03-datagrid(数据表格)查询和编辑.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/23-combotree组合树.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/24-treegrid(数据数结构).html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/tree.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/treegrid.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/081-DataGrid(数据表格组件之数据加载和分页).html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/082-DataGrid(数据表格组件之数据排序.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/083-DataGrid(数据表格组件之样式设置).html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/084-DataGrid(数据表格组件之查询功能).html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/085-DataGrid(数据表格组件之新增功能).html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/10-Combo（下拉框组件）.html" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/21-Combo（下拉框组件）.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/21-ComboBox(组合框).html" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/22-ComboBox(组合框).html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/JQuery/05-input事件.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/JQuery/06-oninput和onpropertychange.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/09-panel(面板组件).html" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/09-panel(面板组件).html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/13-Form表单组件.html" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/13-Form表单组件.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/18-tree组件.html" afterPath="$PROJECT_DIR$/框架系列问题/EasyUIPractice/18-tree组件.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,105 +22,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="21-Combo（下拉框组件）.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/21-Combo（下拉框组件）.html">
+      <file leaf-file-name="01-选择器.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/01-选择器.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="595">
+              <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="22-ComboBox(组合框).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/22-ComboBox(组合框).html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="23-combotree组合树.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/23-combotree组合树.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="24-treegrid(数据数结构).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/24-treegrid(数据数结构).html">
+      <file leaf-file-name="05-input事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/05-input事件.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="16-SearchBox(搜索框)组件.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/16-SearchBox(搜索框)组件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="27" />
+              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="treegrid.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/treegrid.json">
+      <file leaf-file-name="06-oninput和onpropertychange.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/06-oninput和onpropertychange.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02-datagrid(数据表格)样式设置.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/08-datagrid组件/02-datagrid(数据表格)样式设置.html">
+      <file leaf-file-name="02-鼠标事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/02-鼠标事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03-datagrid(数据表格)查询和编辑.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/08-datagrid组件/03-datagrid(数据表格)查询和编辑.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/content.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="-1260">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -189,6 +110,9 @@
         <option value="$PROJECT_DIR$/框架系列问题/EasyUIPractice/08-datagrid组件/03-datagrid(数据表格)查询和编辑.html" />
         <option value="$PROJECT_DIR$/框架系列问题/EasyUIPractice/treegrid.json" />
         <option value="$PROJECT_DIR$/框架系列问题/EasyUIPractice/24-treegrid(数据数结构).html" />
+        <option value="$PROJECT_DIR$/框架系列问题/JQuery/01-选择器.html" />
+        <option value="$PROJECT_DIR$/框架系列问题/JQuery/05-input事件.html" />
+        <option value="$PROJECT_DIR$/框架系列问题/JQuery/06-oninput和onpropertychange.html" />
       </list>
     </option>
   </component>
@@ -262,7 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EasyUIPractice" />
+              <option name="myItemId" value="JQuery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,7 +322,7 @@
       <workItem from="1497107119273" duration="18000" />
       <workItem from="1497108650478" duration="284000" />
       <workItem from="1497110228038" duration="7032000" />
-      <workItem from="1497141916132" duration="18462000" />
+      <workItem from="1497141916132" duration="24894000" />
     </task>
     <task id="LOCAL-00001" summary="coding in work">
       <created>1496736723693</created>
@@ -498,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497117269325</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="coding in home">
+      <created>1497175620525</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1497175620541</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64518000" />
+    <option name="totallyTimeSpent" value="70950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,48 +483,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/02-使用EasyUI智能加载.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试页面/05-test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/07-分页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/081-DataGrid(数据表格组件之数据加载和分页).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/09-panel(面板组件).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
-          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/21-Combo（下拉框组件）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架系列问题/EasyUIPractice/05-放置组件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -939,6 +828,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/基本知识点.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS系列问题/05-使用not取消最后一个边框.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/01-选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/02-鼠标事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/05-input事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/JQuery/06-oninput和onpropertychange.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
