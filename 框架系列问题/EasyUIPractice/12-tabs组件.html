@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<div id="box" style="width: 500px;height: 600px;">
+    <div title="tab1" data-options="closable:true">tab1</div>
+    <div title="tab2" data-options="closable:true,selected:true">tab2</div>
+    <div title="tab3" data-options="closable:true">tab3</div>
+</div>
+<script>
+    $(function () {
+        /*
+         * 依赖于面板组件：panel
+         * */
+        $('#box').tabs({
+            /*
+             * 属性
+             * */
+//            plain:true,
+//            fit:true,
+//            border:true,
+//            tabWidth:300,
+//           点击一下滚动的距离，使用该属性要先tabwidth必须设置
+//            scrollIncrement:100,
+//           滚动的时间
+//            scrollDuration:1000,
+            tools:[{
+                iconCls:'icon-add',
+                handler:function () {
+                    alert(11)
+                }
+            }],
+            toolPosition:'top',
+
+//            tabPosition:'left',
+
+            showHeader:true,
+            /*
+             * 事件,onAdd,onLoad,onUpdates事件要写方法是才能用
+             * */
+//            onSelect:function (title,index) {
+//                alert(title + '-' + index)
+//            },
+//            onUnselect:function (title,index) {
+//                alert(title + '-' + index)
+//            },
+            onBeforeClose:function (title,index) {
+                alert(title + '-' + index)
+            },
+
+        })
+
+        console.log($('#box').tabs('options'));
+
+        /*
+         * 方法
+         * */
+        $('#box').tabs('add',{
+            id:'#bbbb',
+            title:'新建面板',
+            closable:true,
+            content:'这是一个新建的面板',
+            iconCls:'icon-edit',
+        })
+    })
+</script>
+</body>
+</html>

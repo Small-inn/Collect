@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box,.more,.than{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            margin: 100px auto;
+        }
+        .box p{
+            line-height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .more p{
+            display: block;
+            display: -webkit-box;
+            -webkit-line-clamp:4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .than p{
+            position: relative;
+            line-height: 20px;
+            max-height: 40px;
+            overflow: hidden;
+        }
+        .than p::after{
+            content: '\02026';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-left: 40px;
+            background: -webkit-linear-gradient(left,transparent,hotpink 55%);
+            background: -o-linear-gradient(right,transparent,hotpink 55%);
+            background: -moz-linear-gradient(right,transparent,hotpink 55%);
+            background: linear-gradient(to right,transparent,hotpink 55%);
+        }
+    </style>
+</head>
+<body>
+<!--这个是单行文本溢出隐藏-->
+<div class="box">
+    <p>遥夜亭皋闲信步。才过清明，渐觉伤春暮。数点雨声风约住。朦胧淡月云来去。桃杏依稀香暗渡。谁在秋千，笑里轻轻语。一寸相思千万绪。人间没个安排处。</p>
+</div>
+<!--这个是多行文本溢出隐藏:第一种方法-->
+<div class="more">
+    <p>遥夜亭皋闲信步。才过清明，渐觉伤春暮。数点雨声风约住。朦胧淡月云来去。桃杏依稀香暗渡。谁在秋千，笑里轻轻语。一寸相思千万绪。人间没个安排处。</p>
+</div>
+<!--这个是多行文本溢出隐藏:第二种方法:有点问题-->
+<div class="than">
+    <p>遥夜亭皋闲信步。才过清明，渐觉伤春暮。数点雨声风约住。朦胧淡月云来去。桃杏依稀香暗渡。谁在秋千，笑里轻轻语。一寸相思千万绪。人间没个安排处。</p>
+</div>
+</body>
+</html>

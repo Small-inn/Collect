@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <style>
+        input{
+            margin-left: 30px;
+        }
+        table{
+            margin:30px auto;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        table tr th,td{
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        table th{
+            color: #ffffff;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--
+需求：
+1.实现列表的删除功能
+2.实现增加功能
+3.实现关键字搜索功能(过滤功能)
+4.实现键盘enter按下事件的添加功能
+5.v-on的默认按键修饰符
+6.自定义指令
+-->
+<div id="app">
+    <input type="text" v-model="productId" v-color color-name="red"><input type="text" v-model="productName" @keydown.enter="add()"><input type="button" value="添加品牌" @click="add()">
+    <input type="text" v-model="seachVal" v-focus>
+    <table>
+        <tr>
+            <th>编号</th>
+            <th>品牌名称</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        <tr v-for="item in list | filterBy seachVal in 'name' " track-by="$index">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.ctime}}</td>
+            <td><a href="#" @click="del($index)">删除</a></td>
+        </tr>
+    </table>
+</div>
+<script src="./vue1028.js"></script>
+<script>
+
+    //定义一个v-focus的自定的指令
+    Vue.directive('focus',function () {
+        this.el.focus()
+    });
+//    自定义一个带参数的指令
+    Vue.directive('color',{
+        parmas:['colorName'],
+        bind:function () {
+        var cName = this.parmas.colorName;
+        this.el.style.color = cName;
+    }
+    })
+   new Vue({
+        el: '#app',
+        data: {
+           list:[
+               {id:1,name:'宝马',ctime:new Date()},
+               {id:2,name:'奔驰',ctime:new Date()},
+               {id:3,name:'奥迪',ctime:new Date()}
+           ],
+            productId:'',
+            productName:'',
+            seachVal:''
+        },
+        methods: {
+            del:function ($index) {
+                this.list.splice($index,1)
+            },
+            add:function (e) {
+//                下面的这段代码用'@keydown.enter="add()"'
+//                if(e.keyCode != 13){
+//                    return
+//                }
+//                拿到输入的值
+                var productObj = {id:this.productId,name:this.productName,ctime:new Date()}
+
+                this.list.push(productObj)
+
+                this.productId = ''
+                this.productName = ''
+            }
+        },
+        computed: {}
+    })
+</script>
+</body>
+</html>

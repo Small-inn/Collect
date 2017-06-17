@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<div id="box">
+
+</div>
+
+<!--自定义-->
+<!--<div id="tt">-->
+<!--<a class="icon-add" onclick="javvscipt:alert('add')"></a>-->
+<!--<a class="icon-edit"></a>-->
+<!--<a class="icon-cut"></a>-->
+<!--</div>-->
+<script>
+    $(function () {
+        $('#box').panel({
+            /**
+             * 属性：
+             * */
+            title:'我的面板',
+            width:500,
+            height:300,
+            iconCls:'icon-search',
+            left:100,
+            top:100,
+//           定义css样式
+            cls: 'a',
+            headerCls:'b',
+            bodyCls:'c',
+            style:{
+                'min-height':'300px',
+            },
+//           fit:true,
+//           border:false,
+//           noheader:true,
+            content:'面板内容',
+//         按钮
+            collapsiable:true,
+            collapsible:true,
+            minimizable:true,
+            maximizable:true,
+            closable:true,
+//         自定义按钮,结合上面的#tt
+//         tools:'#tt',
+//         数组写法
+            tools:[{
+                iconCls:'icon-help',
+                handler:function () {
+                    alert('help')
+                }
+            }],
+//           读取远程数据
+//           href:'data.json',
+//           loadingMessage:'正在加载中',
+
+            /**
+             * 事件：(详情参考官网)
+             * */
+//           onBeforeLoad:function () {
+//               alert('远程加载之前触发!')
+//               return false
+//           },
+//           onLoad:function () {
+//                alert('加载时触发!')
+//           },
+        })
+        /**
+         * 方法：详情参官网
+         * */
+//  查看方法：
+
+        $("#box").panel('panel').css('position','absolute')
+
+        console.log($('#box').panel('options'));
+        $('#box').panel('setTitle','我的面板组件')
+
+    })
+</script>
+</body>
+</html>

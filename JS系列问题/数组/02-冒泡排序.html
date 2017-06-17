@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var i,j,len,temp;
+    var sort = function (arr) {
+        for(i = 0; len = arr.length - 1, i < len; i++){
+            for(j = 0; len = arr.length - i - 1, j < len; j++){
+                if(arr[j] > arr[j + 1]){
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+        return;
+    }
+    var arr  =  [1,23,2,4,6,45,787,464,46,0];
+    sort(arr);
+</script>
+</body>
+</html>
