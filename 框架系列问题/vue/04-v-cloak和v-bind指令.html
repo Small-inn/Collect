@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="app">
+    <!--防止文档样式闪烁-->
+    <div v-cloak>{{message}}</div>
+
+
+
+    <!--v-bind：给一个dom元素绑定任何的属性，一般额将v-bind绑定class和style两个属性-->
+
+    <input type="text" v-bind:title="titleMsg">
+    <input type="text" v-bind:class="color">
+
+    <!--v-bind的特殊写法:
+        在绑定某一些属性的时候，属性的值是有固定的字符串加上一个变量来组成的
+        如下例，不能使用:href="getnews"+id
+    -->
+    <a v-bind="{href:'gentnews/'+id}"></a>
+</div>
+<script src="./vue1028.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message: 'hellworld',
+            titleMsg:'请输入用户名',
+            color:'red',
+            id:1
+        },
+        methods: {},
+        computed: {}
+    })
+</script>
+</body>
+</html>

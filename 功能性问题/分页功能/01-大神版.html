@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="pageLeft">
+    <p>
+        共 <span class="totalPage"></span> 条数据  <span class="totalPage_num"></span>  到第 <input type="text" value=""> 页 <button>确定</button>
+    </p >
+</div>
+<div class="paging">
+    <div class="detailLast">前一页</div>
+    <div class="num">
+        <div class="display">
+        </div>
+    </div>
+    <div class="detailNext">后一页</div>
+</div>
+<script>
+    function displayNumber(currentNum, totalNum) {
+        $(".display").html('');
+        // var currentPage = Math.ceil(currentNum / (once_num/page_num))+1;
+        var currentPage=parseInt(currentSwitchNum);
+        // console.log('--------------',currentPage);
+        // console.log('----------',page);
+        if(page>5){
+            if(currentPage<=4){
+                for (var i = 1; i <= 5; i++) {
+                    if(i==currentPage){
+                        // console.log('appendcurrent',i);
+                        $(".display").append('<div class="aa bg">' + i + '</div>');
+                    }else{
+                        // console.log('appendone',i);
+                        $(".display").append('<div class="aa">' + i + '</div>');
+                    }
+                }
+                $(".display").append('<div class="aa">...</div>');
+            }else if(currentPage>4){
+                $(".display").append('<div class="aa">1</div>');
+                // for (var i = 1; i <= 1; i++) {
+                //     if(i==currentPage){
+                //         $(".display").append('<div class="aa bg">' + i + '</div>');
+                //     }else{
+                //         $(".display").append('<div class="aa">' + i + '</div>');
+                //     }
+                // }
+                $(".display").append('<div class="aa">...</div>');
+                for (var i = currentPage-1; i <= Math.min(currentPage+1,page); i++) {
+                    if(i==currentPage){
+                        $(".display").append('<div class="aa bg">' + i + '</div>');
+                    }else{
+                        $(".display").append('<div class="aa">' + i + '</div>');
+                    }
+                }
+
+                if(currentPage+1<page){
+                    $(".display").append('<div class="aa">...</div>');
+                }
+            }
+        }else{
+            for (var i = 1; i <= page; i++) {
+                if(i==currentPage){
+                    // console.log('appendcurrent',i);
+                    $(".display").append('<div class="aa bg">' + i + '</div>');
+                }else{
+                    // console.log('appendone',i);
+                    $(".display").append('<div class="aa">' + i + '</div>');
+                }
+            }
+        }
+
+
+//        参数
+
+        $(".detailLast").on('click', function () {
+            // lastNum--;
+            // lnNum = lastNum;
+            // if (lastNum <= 1) {
+            //     lastNum = 1;
+            //     lnNum = 1;
+            // }
+            // $(".aa").css("background-color", "white");
+            // $(".aa").eq(lastNum - 1).css("background-color", "#20a8d8");
+            // if (parseFloat($(".display").css("left")) < 0) {
+            //     $(".display").css("left", "+=50px");
+            // }
+            // $next_click = true;
+            // $('.pageLeft input').val(lastNum);
+            // // if(lastNum == 1 && $last_click == false){
+            // //     return;
+            // // }
+            // //调用方法获取数据上传参数lnNum,每页条数
+            // dateQuery((lnNum - 1) * page_num, page_num);
+            // // $('.startPage').html(lnNum*2+1);
+            // // $('.endPage').html(lnNum*2+1+2);
+            // // $('.totalPage').html(list_pagecount_total);
+
+            switchCurrentNum(currentSwitchNum-1);
+        })
+        $(".detailNext").on('click', function () {
+            // lastNum++;
+            // lnNum = lastNum;
+            // if (lastNum >= page) {
+            //     lastNum = page;
+            //     lnNum = page;
+            // }
+            // $(".aa").css("background-color", "white");
+            // $(".aa").eq(lastNum - 1).css("background-color", "#20a8d8");
+            // if ($(".display").width() < ($(".aa").width()) * page) {
+            //     $(".display").css("left", "-=50px");
+            // }
+            // $num = list_pagecount_total;
+            // if ($next_click == false) {
+            //     return;
+            // }
+            // $('.pageLeft input').val(lastNum);
+            // //调用方法获取数据上传参数lnNum,每页条数
+            // dateQuery((lnNum - 1) * page_num, page_num);
+            // // $('.startPage').html(lnNum*2+1);
+            // // $('.endPage').html(lnNum*2+1+2);
+            // // $('.totalPage').html(list_pagecount_total);
+            // if (lastNum == list_pagecount_total) {
+            //     $next_click = false;
+            // }
+            switchCurrentNum(currentSwitchNum+1);
+        })
+
+
+// function display_click() {
+//     $(".display").on("click", ".aa", function () {
+//         $next_click = true;
+//         // $(".aa").css("background-color", "white");
+//         // $(this).css("background-color", "#20a8d8");
+//         nowNum = $(this).html();
+//
+//         $('.pageLeft input').val(nowNum);
+//
+//         var differenceNum = nowNum - lastNum;
+//         if (differenceNum < 0) {
+//             // if(parseFloat($(".display").css("left")) < 0){
+//             //     $(".display").css("left","+="+((0-differenceNum)*50)+"px");
+//             //     if(parseFloat($(".display").css("left")) >= 0){
+//             //         $(".display").css("left","0");
+//             //     }
+//             // }
+//         } else if (differenceNum > 0) {
+//             // if($(".display").width() < ($(".aa").width())*page){
+//             //     $(".display").css("left","-="+(differenceNum*50)+"px");
+//             //     if($(".display").width() >= ($(".aa").width())*page){
+//             //         var maxLeft = 50*(page-5);
+//             //         $(".display").css("left",-maxLeft+"px");
+//             //     }
+//             // }
+//         } else {
+//             return;
+//         }
+//         lastNum = nowNum;
+//         //调用方法获取数据上传参数nowNum,每页条数
+//         dateQuery((nowNum - 1) * page_num, page_num);
+//
+//
+//     })
+//
+// }
+
+        $('.pageLeft button').on('click', function () {
+
+            nowNum = $('.pageLeft input').val();
+            switchCurrentNum(nowNum);
+
+            // dateQuery((nowNum - 1) * page_num, page_num);
+            // $(".aa").css("background-color", "white");
+            // $(".aa").eq(nowNum - 1).css("background-color", "#20a8d8");
+
+            // console.log($('.pageLeft input').val());
+
+        });
+
+        var  previewSwitchNum;  //上一次下标
+        var  currentSwitchNum=1;  //当前下标
+        function switchCurrentNum(num) {
+            num=parseInt(num);
+            if (num<1)return;
+            if (num>page)return;
+            previewSwitchNum = currentSwitchNum;
+            currentSwitchNum = num;
+            dateQuery((currentSwitchNum - 1) * page_num, page_num);
+
+        }
+</script>
+</body>
+</html>

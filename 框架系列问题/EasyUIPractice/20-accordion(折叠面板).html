@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <script type="text/javascript" src="easyui/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js">
+    </script>
+</head>
+<body>
+<div id="box" style="width: 400px;height: 200px;">
+    <div title="accordion1">1</div>
+    <div title="accordion2">2</div>
+    <div title="accordion3">3</div>
+</div>
+<script>
+    $(function () {
+        $('#box').accordion({
+            /*
+            * 属性：
+            * */
+//            width:'400px',
+//            高度不定死，自适应
+//            height:'500px',
+            fit:false,
+            animate:true,
+            /*
+            *
+            * 事件：
+            * */
+//            onSelect:function () {
+//                alert(111)
+//            }
+        }).hide();
+        /*
+         * 方法：
+         * */
+        console.log($.fn.accordion.defaults.width);
+        $(document).click(function () {
+           $('#box').accordion().show();
+           $('#box').accordion('resize')
+       })
+
+        $('#box').accordion('add',{
+            title: 'New Title',
+            content: 'New Content',
+            selected: false,
+            collapsible:true,
+            selected:true,
+        })
+    })
+</script>
+</body>
+</html>
