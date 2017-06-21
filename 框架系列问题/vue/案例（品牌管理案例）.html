@@ -57,20 +57,21 @@
 <script src="./vue1028.js"></script>
 <script>
 
-    //定义一个v-focus的自定的指令
+    //定义一个v-focus的自定属性指令
     Vue.directive('focus',function () {
         this.el.focus()
     });
 //    自定义一个带参数的指令
     Vue.directive('color',{
-        parmas:['colorName'],
+        params:['colorName'],
         bind:function () {
-        var cName = this.parmas.colorName;
+        var cName = this.params.colorName;
         this.el.style.color = cName;
     }
-    })
+    });
    new Vue({
         el: '#app',
+//       数据:
         data: {
            list:[
                {id:1,name:'宝马',ctime:new Date()},
@@ -81,6 +82,7 @@
             productName:'',
             seachVal:''
         },
+//       方法:
         methods: {
             del:function ($index) {
                 this.list.splice($index,1)
@@ -95,7 +97,7 @@
 
                 this.list.push(productObj)
 
-                this.productId = ''
+                this.productId = 0
                 this.productName = ''
             }
         },
