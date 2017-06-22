@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./vue1028.js"></script>
+    <script src="src/vue1028.js"></script>
 </head>
 <body>
 <div id="app">
@@ -27,7 +27,7 @@
         2.自定义私有过滤器:日期格式化
 
     -->
-    {{time | dateFmt}}<br>
+    {{time | dateFmt 'hh:mm:ss'}}<br>
     <!--
         3.自定义全局过滤器
     -->
@@ -54,12 +54,19 @@
         },
 //      自定义私有过滤器
         filters:{
-            dateFmt:function (date,str,s1) {
+            dateFmt:function (date,Fmt,s1) {
                 var date = new Date(date)
                 var y = date.getFullYear()
                 var M = date.getMonth() + 1
                 var d = date.getDate()
-                return y + '-' + M + '-' + d;
+                var h = date.getHours()
+                var m = date.getMinutes()
+                var s = date.getSeconds()
+                if(Fmt == 'yyyy-MM-dd'){
+                    return y + '-' + M + '-' + d;
+                }else {
+                    return h + ':' + m + ':' + s;
+                }
             }
         }
     })

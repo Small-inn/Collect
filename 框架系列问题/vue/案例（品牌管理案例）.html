@@ -37,7 +37,9 @@
 6.自定义指令
 -->
 <div id="app">
-    <input type="text" v-model="productId" v-color color-name="red"><input type="text" v-model="productName" @keydown.enter="add()"><input type="button" value="添加品牌" @click="add()">
+    <input type="text" v-model="productId" v-color color-name="red">
+    <input type="text" v-model="productName" @keydown.enter="add()">
+    <input type="button" value="添加品牌" @click="add()">
     <input type="text" v-model="seachVal" v-focus>
     <table>
         <tr>
@@ -49,14 +51,28 @@
         <tr v-for="item in list | filterBy seachVal in 'name' " track-by="$index">
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
-            <td>{{item.ctime}}</td>
+            <td>{{item.ctime | dateFmt 'hh:mm:ss'}}</td>
             <td><a href="#" @click="del($index)">删除</a></td>
         </tr>
     </table>
 </div>
-<script src="./vue1028.js"></script>
+<script src="src/vue1028.js"></script>
 <script>
-
+    //       定义过滤器
+    Vue.filter('dateFmt',function (dateFmt,str) {
+        var date = new Date()
+        var y = date.getFullYear()
+        var M = date.getMonth() + 1
+        var d = date.getDate()
+        var h = date.getHours()
+        var m = date.getMinutes()
+        var s = date.getSeconds()
+        if(dateFmt == 'yyyy-MM-dd'){
+            return y +　'-' + M + '-' + d
+        }else {
+            return h + ':' + m + ':' + s
+        }
+    })
     //定义一个v-focus的自定属性指令
     Vue.directive('focus',function () {
         this.el.focus()
