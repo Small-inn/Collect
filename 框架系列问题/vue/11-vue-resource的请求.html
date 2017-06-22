@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body id="app">
+<button @click = getData>请求</button>
+<h2>{{message}}</h2>
+<div class="box">
+
+</div>
+<script src="./vue1028.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: '你好,客店小二LX',
+            list:[]
+        },
+        methods: {
+            getData:function () {
+                var url = 'data.json'
+                this.$http.get(url).then(function (response) {
+                    var body = response.body
+
+                    if(body.status != 0){
+                        console.log(body.message);
+                    }
+
+                    var pDataList = response.body.message
+
+                    this.list = pDataList
+                })
+            }
+        },
+        computed: {}
+    })
+</script>
+
+</body>
+</html>

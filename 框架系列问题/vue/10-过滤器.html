@@ -1,0 +1,68 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue1028.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--
+        1.系统内置过滤器：
+           转大写:uppercase
+           转小写:lowercase
+           将对象数组格式化转化成json字符串输出:json
+           filterBy
+    -->
+
+    {{msg | uppercase}}<br>
+    {{msg | lowercase}}<br>
+    {{users | json}}<br>
+
+
+    <!--
+        2.自定义私有过滤器:日期格式化
+
+    -->
+    {{time | dateFmt}}<br>
+    <!--
+        3.自定义全局过滤器
+    -->
+    {{time | dateFMT}}
+</div>
+<script>
+    //定义全局过滤器：能够复用，私有的过滤器在VM中不可以共享
+    Vue.filter('dateFMT',function (date) {
+        var date = new Date(date)
+        var y = date.getFullYear()
+        var M = date.getMonth() + 1
+        var d = date.getDate()
+        return y + '-' + M + '-' + d;
+    })
+    new Vue({
+        el:'#app',
+        data:{
+            msg:'hello VUE',
+            users:[
+                {name:'lx',age:18},
+                {name:'xf',age:18}
+            ],
+            time: new Date()
+        },
+//      自定义私有过滤器
+        filters:{
+            dateFmt:function (date,str,s1) {
+                var date = new Date(date)
+                var y = date.getFullYear()
+                var M = date.getMonth() + 1
+                var d = date.getDate()
+                return y + '-' + M + '-' + d;
+            }
+        }
+    })
+</script>
+</body>
+</html>

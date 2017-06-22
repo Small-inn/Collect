@@ -10,11 +10,7 @@
 <body id="app">
 <script src=""></script>
 <script>
-    Vue.component = ('todos', {
-        props: ['todo'],
-        template: '<li>{{todo.text}}</li>'
-    })
-    var app = new Vue({
+    new Vue({
         el: '#app',
         data: {
             message: 'hellworld'
