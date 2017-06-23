@@ -51,7 +51,7 @@
         <tr v-for="item in list | filterBy seachVal in 'name' " track-by="$index">
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
-            <td>{{item.ctime | dateFmt 'hh:mm:ss'}}</td>
+            <td>{{item.ctime | dateFmt 'yyyy-MM-dd'}}</td>
             <td><a href="#" @click="del($index)">删除</a></td>
         </tr>
     </table>
@@ -59,7 +59,7 @@
 <script src="src/vue1028.js"></script>
 <script>
     //       定义过滤器
-    Vue.filter('dateFmt',function (dateFmt,str) {
+    Vue.filter('dateFmt',function (input,str) {
         var date = new Date()
         var y = date.getFullYear()
         var M = date.getMonth() + 1
@@ -67,7 +67,7 @@
         var h = date.getHours()
         var m = date.getMinutes()
         var s = date.getSeconds()
-        if(dateFmt == 'yyyy-MM-dd'){
+        if(str == 'yyyy-MM-dd'){
             return y +　'-' + M + '-' + d
         }else {
             return h + ':' + m + ':' + s
