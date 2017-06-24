@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid布局</title>
+    <style>
+        /*
+            1.grid-template-colums和grid-template-rows指定列宽、列间距、行高、行间距。
+            2.对应的ACEFHJ元素的列宽为100px(页面中的黑色区域)，BDGI是列与列之间间距是10px(页面中的红色区域)
+        */
+        .wrap{
+            display: grid;
+            grid-template-columns: 100px 10px 100px 10px 100px 10px 100px;
+            grid-template-rows: auto 10px auto 10px;
+        }
+        .box{
+            background-color: #444;
+            color: #fff;
+            font-size:150%;
+            padding:20px;
+            text-align:center;
+        }
+        .B,.D,.G,.I{
+            background-color: red;
+        }
+        .A{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .B {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .C {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .D {
+            grid-column-start: 7;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .E {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .F {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: orange;
+        }
+        .G {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .H {
+            grid-column-start: 7;
+            grid-column-end: 8;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .I {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            background-color:hotpink;
+        }
+        .J {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="box A">A</div>
+    <div class="box B">B</div>
+    <div class="box C">C</div>
+    <div class="box D">D</div>
+    <div class="box E">E</div>
+    <div class="box F">F</div>
+    <div class="box G">G</div>
+    <div class="box H">H</div>
+    <div class="box I">L</div>
+    <div class="box J">I</div>
+</div>
+</body>
+</html>
