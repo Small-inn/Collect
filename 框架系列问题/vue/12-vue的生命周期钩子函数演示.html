@@ -16,7 +16,16 @@
         data: {
             message: 'hellworld'
         },
-        methods: {},
+        methods: {
+            getData:function(){
+//      定义一个url，一个支持jsonp的请求
+               var url = 'http://www.baidu.com';
+               this.$http.jsonp(url).then(function (response) {
+                   var body = response.body;
+                   console.log(body);
+               })
+            }
+        },
         computed: {}
     })
 </script>

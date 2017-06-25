@@ -87,12 +87,15 @@
     });
    new Vue({
         el: '#app',
+       created:function () {
+            this.getData()
+       },
 //       数据:
         data: {
            list:[
-               {id:1,name:'宝马',ctime:new Date()},
-               {id:2,name:'奔驰',ctime:new Date()},
-               {id:3,name:'奥迪',ctime:new Date()}
+//               {id:1,name:'宝马',ctime:new Date()},
+//               {id:2,name:'奔驰',ctime:new Date()},
+//               {id:3,name:'奥迪',ctime:new Date()}
            ],
             productId:'',
             productName:'',
@@ -115,6 +118,17 @@
 
                 this.productId = 0
                 this.productName = ''
+            },
+            getData:function () {
+                var url = './src/data.json';
+                this.$http.get(url).then(function (response) {
+                    console.log(response);
+                    var body = response.body;
+                    if(body.status != 0){
+                        return body.message;
+                    }
+                    this.list = body.message
+                })
             }
         },
         computed: {}
