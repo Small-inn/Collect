@@ -19,6 +19,7 @@
         methods: {
             getData:function(){
 //      定义一个url，一个支持jsonp的请求
+//      使用jsonp首先要判断是否可以使用jsonp请求数据。类似于：XXX(数据参数)
                var url = 'http://www.baidu.com';
                this.$http.jsonp(url).then(function (response) {
                    var body = response.body;
