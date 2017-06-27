@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<div class="box" id="app">
+    <!--插值表达式-->
+    {{message}}<br>
+
+    <span v-text="message"></span><br>
+
+    <div v-text="htmlMsg"></div>
+    <div v-html="htmlMsg"></div>
+    <button v-on:click="change">修改</button>
+</div>
+<script src="src/vue1028.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message: 'hellworld',
+            htmlMsg:'<h2>带有html标签的数据</h2>'
+        },
+//        定义方法
+        methods: {
+            change:function () {
+                this.message = '滚蛋吧，傻逼们！'
+            }
+        },
+        computed: {}
+    })
+</script>
+</body>
+</html>
