@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<div class="box" id="app">
+    <a href="#" v-link="{path:'/login'}">登录</a>
+    <a href="#" v-link="{path:'/register'}">注册</a>
+
+    <router-view></router-view>
+</div>
+<script src="./src/vue1028.js"></script>
+<script src="./src/vue-router073.js"></script>
+<script>
+    //定义根组件
+    var App = Vue.extend({});
+//    定义组件
+    var register =  Vue.extend({
+        template:'<h2>注册</h2>'
+    });
+
+    // 2.0 定义登录组件
+    var login = Vue.extend({
+        template:'<h2>登录</h2>'
+    });
+
+// 实例化vueRouter对象
+    const vueRouter = new VueRouter();
+//在vue1.0中map是一个对象
+    vueRouter.map({
+        'login':{
+            component:login
+        },
+        'register':{
+            component: register
+        }
+        })
+//  路由生效
+    vueRouter.start(App,'#app')
+
+//
+    vueRouter.redirect({'/':'/login'})
+</script>
+</body>
+</html>
