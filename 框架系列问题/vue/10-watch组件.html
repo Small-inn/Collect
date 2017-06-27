@@ -7,27 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue</title>
 </head>
-<body>
-<div class="box" id="app">
-    <!--v-if实质是判断之后浏览器不解析DOM-->
-    <div v-if="user.age > 30">
-        {{user.name}}
-    </div>
-    <!--v-show的实质是控制display:none的样式达到隐藏的效果的-->
-    <div v-show="user.name > 30">
-        {{user.name}}
-    </div>
-</div>
-<script src="../src/vue1028.js"></script>
+<body id="app">
+<button @click="dosomething">点击</button>
+<div>{{a}}</div>
+<script src="./src/vue1028.js"></script>
 <script>
     new Vue({
         el: '#app',
         data: {
-            user:{name:'haha',age:30}
+            a:1
         },
-        methods: {},
+        methods: {
+            dosomething:function () {
+                this.a ++
+            }
+        },
+        watch:{
+            'a':function (val,oldval) {
+                console.log(val +'------'+oldval);
+            }
+        },
         computed: {}
     })
 </script>
+
 </body>
 </html>
