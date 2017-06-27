@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body id="app">
+<div>{{msg}}</div>
+<script src="./src/vue1028.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            msg: 'hellworld'
+        },
+        init:function(){
+            console.log('1.0 init',this.msg);
+        },
+        created:function(){
+            console.log('2.0 created',this.msg);
+        },
+        beforeCompile:function(){
+            console.log('3.0 beforeCompile');
+        },
+        compiled:function(){
+            console.log('4.0 compiled');
+        },
+        ready:function(){
+            console.log('5.0 ready');
+        },
+        attached:function(){
+            console.log('6.0 attached');
+        },
+        detached:function(){
+            console.log('7.0 detached');
+        },
+        beforeDestroy:function(){
+            console.log('8.0 beforeDestroy');
+        },
+        destroyed:function(){
+            console.log('9.0 destroyed');
+        },
+        methods: {},
+        computed: {}
+    })
+</script>
+
+</body>
+</html>
