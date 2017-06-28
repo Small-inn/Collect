@@ -8,7 +8,7 @@
     <title>Vue</title>
     <style>
         .show{
-            transition:all 0.4s ease;
+            transition:all 14s ease;
         }
     </style>
     <script src="../src/vue2.js"></script>
@@ -39,7 +39,7 @@
                 el.style.transform='translate(100px,0)'
             },
             enter:function (el) {
-//                保证dom实时刷新
+//                保证dom实时刷新(是为了实时更新dom)
                 var rf = el.offsetHeight
 //                将translate设置回到0
                 this.$nextTick(function () {
