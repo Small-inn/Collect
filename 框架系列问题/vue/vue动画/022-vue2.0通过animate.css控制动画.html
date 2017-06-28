@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <link rel="stylesheet" href="../src/animate.css">
+    <script src="../src/vue2.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button id="btn" @click="toggle">点击</button>
+        <!--动画效果请移步animate.css官网-->
+        <transition enter-active-class="fadeInRight" leave-active-class="fadeOutRight">
+            <div v-show="isShow" class="animated">
+                {{message}}
+            </div>
+        </transition>
+    </div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX',
+            isShow:false
+        },
+        methods: {
+            toggle:function () {
+                this.isShow = !this.isShow
+            }
+        },
+        computed: {}
+    })
+</script>
+
+</body>
+</html>

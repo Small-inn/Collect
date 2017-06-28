@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <style>
+        .show{
+            transition: all .4s ease;
+        }
+    </style>
+</head>
+<body id="app">
+<button id="btn" @click="toggle">点击</button>
+<div v-show="isShow" transition="show" class="show">
+    {{message}}
+</div>
+<script src="../src/vue1028.js"></script>
+<script>
+    //首先定义一个全局的动画对象
+    Vue.transition('show',{
+        beforeEnter:function (el) {
+//        动画的初始位置
+            el.style.transform = 'translate(100px,0)'
+        },
+//        动画进入的函数
+        enter:function (el) {
+//           刷新dom元素
+            var rf = el.offsetHeight;
+//           将dom的translate设置为0
+            this.$nextTick(function () {
+                el.style.transform = 'translate(0,0)'
+            })
+        },
+//        离开时执行的动画
+        afterEnter:function (el) {
+            //在vue1.0中无法修改isShow的变量
+        }
+    })
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX',
+            isShow:false
+        },
+        methods: {
+            toggle:function () {
+                this.isShow = !this.isShow
+            }
+        },
+        computed: {}
+    })
+</script>
+
+</body>
+</html>

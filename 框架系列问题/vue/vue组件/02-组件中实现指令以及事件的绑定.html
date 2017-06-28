@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<template id="tpl">
+    <h2>login{{word}}</h2>
+    <a href="#" @click="login">注册</a>
+    <a href="#">登录</a>
+</template>
+<div id="app">
+    {{message}}
+    <first></first>
+</div>
+<script src="../src/vue1028.js"></script>
+<script>
+    //定义组件
+    Vue.component('first',{
+        template:'#tpl',
+//        数据
+        data:function () {
+            return {
+                word:'界面'
+            }
+        },
+//        方法
+        methods: {
+            login:function(){
+                alert(this.word)
+            }
+        }
+    })
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX'
+        },
+        methods: {},
+        computed: {}
+    })
+</script>
+
+</body>
+</html>
