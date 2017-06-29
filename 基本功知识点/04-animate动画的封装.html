@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">到400</button>
+    <button id="btn2">到800</button>
+    <div class="box" id="box"></div>
+    <script>
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var box = document.getElementById('box');
+
+        btn1.onclick = function () {
+            animate(box,400)
+        }
+        btn2.onclick = function () {
+            animate(box,800)
+        }
+        
+        var animate = function (obj,target) {
+//            进来清一下定时器
+            if(obj.timer){
+                clearInterval(obj.timer)
+            }
+            obj.timer = setInterval(function () {
+                var leader = obj.offsetLeft;
+                var step = 7;
+
+                if(target < leader){
+                    step = -step;
+                }
+//                再次判断，如果最后一步的距离(取绝对值)
+                var instance = Math.abs(target - leader);
+//                距离大于一步的距离
+                if(instance > Math.abs(step)){
+                    leader = leader + step;
+                    obj.style.left = leader + 'px';
+                }else {
+//                    小于一步的距离，首先清除一下定时器,然后直接过去
+                    clearInterval(obj.timer)
+                    obj.style.left = target + 'px'
+                }
+            },15)
+        }
+    </script>
+</body>
+</html>

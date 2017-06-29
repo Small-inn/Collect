@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,9 +10,9 @@
 <body>
 <template id="tpl">
     <h2>XX界面</h2>
-    <a href="#" @click="componentName='login'">登录</a>
-    <a href="#" @click="componentName='register'">注册</a>
-    <component :is="componentName"></component>
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <login :tip="msg"></login>
 </template>
 
 <div id="app">
@@ -27,16 +26,19 @@
         template:'#tpl',
         data:function(){
             return {
-                componentName:'login'
+                componentName:'login',
+                msg:'账户管理'
             }
         },
 //        注册子组件
         components:{
             'login':{
-                template:'<h2>登录组件</h2>'
+                template:'<h2>登录组件</h2><p>{{tip}}</p>',
+//               接受父组件传入的值
+                props:['tip']
             },
             'register':{
-                template:'<h2>注册组件</h2>'
+                template:'<h2>注册组件</h2>',
             }
         }
     })

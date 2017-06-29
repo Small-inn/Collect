@@ -8,23 +8,24 @@
     <title>Vue</title>
 </head>
 <body id="app">
-<button @click="dosomething">点击</button>
-<div>{{a}}</div>
-<script src="./src/vue1028.js"></script>
+<div>
+    {{message}}
+</div>
+<div>
+    <button @click="get">获取dom对象</button>
+    <div v-el:mdiv>This is DIV!</div>
+</div>
+<script src="../src/vue1028.js"></script>
 <script>
     new Vue({
         el: '#app',
         data: {
-            a:1
+            message: '客店小二LX'
         },
         methods: {
-            dosomething:function () {
-                this.a ++
-            }
-        },
-        watch:{
-            'a':function (newval,oldval) {
-                console.log(newval +'------'+ oldval);
+            get:function () {
+                console.log(this.$els);
+                this.$els.mdiv.innerHTML = '真的是哎 '
             }
         },
         computed: {}

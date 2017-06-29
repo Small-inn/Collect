@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<template id="tpl">
+    <button @click="send">点击</button>
+</template>
+
+<div id="app">
+    {{message}}
+    <first @send="get"></first>
+</div>
+<script src="../src/vue1028.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX'
+        },
+        methods:{
+            get:function (data) {
+                console.log(data);
+            }
+        },
+        components:{
+            'first':{
+                template:'#tpl',
+                methods:{
+                    send:function () {
+                        this.$emit('send','hello')
+                    }
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

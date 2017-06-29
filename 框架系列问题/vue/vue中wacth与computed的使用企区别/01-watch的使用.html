@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+   <div>
+       <label>名:</label><input type="text" v-model="firstName">
+       <label>姓:</label><input type="text" v-model="lastName"><br>
+       <label>姓名:</label><span>{{fullName}} </span>
+   </div>
+</div>
+
+<script src="../src/vue1028.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX',
+            firstName:'',
+            lastName:'',
+            fullName:''
+        },
+        watch:{
+            'firstName':function (newval,oldval) {
+                this.fullName = this.firstName + this.lastName
+            },
+            'lastName':function (newval,oldval) {
+                this.fullName = this.firstName + this.lastName
+            }
+        },
+        methods: {},
+        computed: {}
+    })
+</script>
+
+</body>
+</html>
