@@ -9,7 +9,7 @@
 </head>
 <body>
 <template id="tpl">
-    <button @click="send">点击</button>
+    <button @click="sendData">点击</button>
 </template>
 
 <div id="app">
@@ -32,7 +32,7 @@
             'first':{
                 template:'#tpl',
                 methods:{
-                    send:function () {
+                    sendData:function () {
                         this.$emit('send','hello')
                     }
                 }
