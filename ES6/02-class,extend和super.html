@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+    * class,extends,super在ES5中代表着原型，构造函数和继承等问题
+    * ES6中引入了class类的概念，让原型更加清晰，与面向对象编程的更加相似
+    * */
+//    1.class
+    /**
+     * 定义class类里面的constructor方法就是构造方法，this关键字代表的是实例对象，
+     * 换句话说constructor内定义的属性方法是实例对象自己的，而constructor以外的属性和方法，
+     * 是共享的。
+     *
+     * class通过extends关键字实现继承，这个要比ES5中修改原型链要好很多。
+     *
+     *
+     * super关键字，代指父类中的实例(就是父类中的this对象)，如果想要继承父类中的属性和方法，
+     * 在子类中的constructor中就必须要调用super方法，因为子类没有自己的this对象，
+     * 而是继承来自父类中的this对象
+     * */
+    class Animal {
+        constructor(){
+            this.type = 'animal'
+        }
+        say(pams){
+            console.log(this.type + 'says:' + pams);
+        }
+    }
+    class Cat extends Animal{
+        constructor(){
+            super()
+            this.type = 'cat'
+        }
+    }
+    let  cat = new Cat()
+    cat.say('hello')
+</script>
+</body>
+</html>

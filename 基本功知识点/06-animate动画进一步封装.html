@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+//      缓动框架
+        var animate = function (obj,json,fn) {
+//            进来清一下定时器
+            if(obj.timer){
+                clearInterval(obj.timer)
+            }
+//
+            obj.timer = setInterval(function () {
+                var flag = true
+                for(var k in json){
+                    if(k == 'opacity'){
+                        var attr = k
+                        var target = json[k]
+                        var leader = getStyle(obj,attr)
+                        leader = parseFloat(leader) || 0
+//                      目标值扩大100倍
+                        target = target * 100
+                        leader = leader * 100
+
+                        var step = (target - leader)/40
+                        if(step > 0){
+                            step = Math.ceil(step)
+                        }else {
+                            step = Math.floor(step)
+                        }
+                        leader = leader + step
+                        obj.style[attr] = leader/100
+                        obj.style['filter'] = 'alpha(opacity="+ leader +")'
+
+                        if(leader != target){
+                            flag = false
+                        }
+                    }else if(k === 'zIndex'){
+                        obj.style['zIndex'] = json[k]
+                    }else {
+                        var attr = k
+                        var target = json[k]
+                        var leader = getStyle(obj,attr)
+                        leader = parseInt(leader) || 0
+
+                        var step = (target - leader)/10
+                        if(step > 0){
+                            step = Math.ceil(step)
+                        }else {
+                            step = Math.floor(step)
+                        }
+                        leader = leader + step
+                        obj.style[attr] = leader + 'px'
+
+                        if(leader != target){
+                            flag = false
+                        }
+                    }
+                }
+
+                if(flag){
+                    clearInterval(obj.timer)
+                    if(fn){
+                        fn()
+                    }
+                }
+            },15)
+        }
+
+//      获取元素的指定样式,处理兼容性问题的代码
+        var getStyle = function (obj,attr) {
+            if(window.getComputedStyle){
+                return window.getComputedStyle(obj,null)[attr]
+            }else {
+                return obj.currentStyle[attr]
+            }
+        }
+    </script>
+</body>
+</html>

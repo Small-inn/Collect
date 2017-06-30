@@ -38,10 +38,13 @@
             if(obj.timer){
                 clearInterval(obj.timer)
             }
-            obj.timer = setInterval(function () {
-                var leader = obj.offsetLeft;
-                var step = 7;
 
+            obj.timer = setInterval(function () {
+//              获取当前dom对象距左边的距离
+                var leader = obj.offsetLeft;
+//              一步走的距离
+                var step = 7;
+//              如果当前的位置在目标距离的左边，就要往回走
                 if(target < leader){
                     step = -step;
                 }
