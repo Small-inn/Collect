@@ -11,6 +11,14 @@
 <div>{{msg}}</div>
 <script src="./src/vue1028.js"></script>
 <script>
+    /*
+    * 在vue中每一个vue实例创建之前都要经过一系列的初始化的过程。
+    * 在实例中需要配置数据观测、编译模板、挂载实例到DOM、最后数据变化适时更新DOM
+    * 在这些过程中，实例会调用生命周期的钩子，提供自定义逻辑的机会，
+    * 比如 created 钩子会在实例被创建之后被调用
+    *
+    * 生命周期图示：https://cn.vuejs.org/v2/guide/instance.html#生命周期图示；
+    * */
     new Vue({
         el: '#app',
         data: {

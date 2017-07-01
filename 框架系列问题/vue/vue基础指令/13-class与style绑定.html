@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+        .active{
+            background-color: hotpink;
+        }
+        .danger {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <!--对象语法-->
+    <div class="box" :class="{active:isActive}"></div>
+    <!--数组语法-->
+    <div class="box" :class="[error]"></div>
+    <!--数组中使用对象语法-->
+    <div class="box" :class="[{error:isActive}]"></div>
+    <button @click="change">点击</button>
+</div>
+<script src="../src/vue1028.js"></script>
+<script>
+    /*
+    * 详情参见：https://cn.vuejs.org/v2/guide/class-and-style.html
+    * */
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX',
+            isActive:true,
+            error:'danger'
+        },
+        methods: {
+            change:function () {
+                return this.isActive = !this.isActive
+            }
+        },
+        computed: {}
+    })
+</script>
+
+</body>
+</html>

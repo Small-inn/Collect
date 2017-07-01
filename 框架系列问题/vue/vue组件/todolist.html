@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+
+    <div id="tdExp">
+        <input type="text" v-model="newTd" @keyup.enter="addTd" placeholder="Add todo">
+        <ul>
+            <li is="todo-item" v-for="(index,todo) in todoList" :title="todo" @remove="todoList.splice(index,1)"></li>
+        </ul>
+    </div>
+</div>
+<script src="../src/vue1028.js"></script>
+<script>
+    Vue.component('todo-item',{
+        template:
+            `
+            <li>
+                {{title}}
+                <button @click="$emit('remove')">X</button>
+            </li>
+            `,
+        props:['title']
+    })
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX',
+            newTd:'',
+            todoList:[
+                'ada',
+                'sdfadsfa'
+            ]
+        },
+        methods: {
+            addTd:function () {
+                this.todoList.push(this.newTd)
+                this.newTd = ''
+            }
+        },
+        computed: {}
+    })
+</script>
+
+</body>
+</html>
