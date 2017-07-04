@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS系列问题/数组/05-stringToarr.html" />
+    <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="wr">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS系列问题/数组/05-stringToarr.html" afterPath="$PROJECT_DIR$/JS系列问题/数组/05-stringToarr.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -116,8 +116,8 @@
       <file leaf-file-name="05-stringToarr.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS系列问题/数组/05-stringToarr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="523">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -400,7 +400,7 @@
       <workItem from="1498643938769" duration="26000" />
       <workItem from="1498705373815" duration="17196000" />
       <workItem from="1499002858911" duration="1209000" />
-      <workItem from="1499175662051" duration="1373000" />
+      <workItem from="1499175662051" duration="2280000" />
     </task>
     <task id="LOCAL-00001" summary="lx">
       <created>1497676369555</created>
@@ -465,11 +465,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498544008656</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wr">
+      <created>1499178591176</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1499178591176</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87758000" />
+    <option name="totallyTimeSpent" value="88665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -893,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JS系列问题/数组/05-stringToarr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        <state relative-caret-position="523">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>

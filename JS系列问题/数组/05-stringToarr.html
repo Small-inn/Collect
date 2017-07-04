@@ -10,8 +10,14 @@
 <body>
 <script>
     var　arr = ["hehe,haha","xixi,zaza","yy,rr"];
+    var newArr = [];
     for(var i = 0; i <　arr.length; i++){
-        console.log(arr[i].split(',')[0]);
+        newArr.push(arr[i].split(',')[0]);
+    }
+    console.log(newArr);
+
+    for(var j = 0; j < newArr.length; j++){
+        console.log(newArr[j].length);
     }
 </script>
 </body>
