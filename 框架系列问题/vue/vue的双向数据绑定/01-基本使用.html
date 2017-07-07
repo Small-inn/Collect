@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+
+    <input type="text" v-model="value"><br>
+
+    <p>{{value}}</p>
+
+    <textarea name="" id="" cols="30" rows="10" v-model="text"></textarea>
+    <div>{{text}}</div>
+
+
+    <input type="checkbox" v-model="checked">
+    {{checked}}
+
+
+    <div>
+        <select v-model="selected">
+            <option disabled value="">请选择</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+    </div>
+</div>
+<script src="../src/vue1028.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: '客店小二LX',
+            value:'',
+            text:'',
+            checked:false,
+            selected:''
+        },
+        methods: {},
+        computed: {}
+    })
+</script>
+
+</body>
+</html>
