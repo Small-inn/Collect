@@ -41,16 +41,18 @@
 					</el-submenu>
 				</el-menu>
 			</aside>
-			<section class=""></section>
+			<section class="">
+				
+			</section>
 		</el-col>
 		<el-col :span="24" class="bottom"><bottom></bottom></el-col>
 	</el-row>
 </template>
 
 <script>
-	import top from './common/top.vue'
-	import bottom from './common/bottom.vue'
-	export default{
+  import top from '../common/top.vue'
+	import bottom from '../common/bottom.vue'
+	export default {
 		data() {
 			return {
 
@@ -71,9 +73,11 @@
 	}
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-	@import './static/css/base.scss';
+    @import '../static/css/base.scss';
 	.container{
+		overflow: hidden;
 		position: absolute;
 		top: 0;
 		left: 0;

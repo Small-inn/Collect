@@ -1,9 +1,10 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import VueRouter from 'vue-router'
+import routes from './router'
 import Element from 'element-ui'
+
 import 'element-ui/lib/theme-default/index.css'
 
 
@@ -11,7 +12,16 @@ import 'element-ui/lib/theme-default/index.css'
 Vue.config.productionTip = false
 
 Vue.use(Element)
+Vue.use(VueRouter)
 
+
+const router = new VueRouter({
+  routes
+})
+
+// router.beforeEach((to,from,next => {
+
+// }))
 /* eslint-disable no-new */
 // new Vue({
 //   el: '#app',
@@ -21,7 +31,6 @@ Vue.use(Element)
 // })
 //上面的代码和下面的等价的
 new Vue({
-  el:'#app',
   router,
   render:h=>h(App)
-})
+}).$mount('#app')

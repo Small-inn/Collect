@@ -21,11 +21,6 @@ iframe,body,p{
     padding:0px;
     margin:0px;
 }
-/*覆盖原有额样式——————开始*/
-.layout-split-north,.layout-split-west,.layout-split-south{
-    border:0px;
-}
-/*覆盖原有额样式——————结束*/
 
 /*头部header*/
  .header{
@@ -87,71 +82,6 @@ iframe,body,p{
     margin-left: 20px;
     margin-top:20px;
 }
-/*左侧菜单*/
-.sidebar-menu{
-    width:150px; 
-    height:100%;
-    min-width: 150px;
-    background:#F7F9FA;
-    text-align: left;
-    font-size: 14px;
-}
-.OneSide{
-}
-.OneSide p{
-    font-size: 14px;
-    color:#333;
-    height:40px;
-    line-height: 40px;
-    padding-left: 10px;
-}
-.TwoSide{
-    /* margin-left: 20px; */
-    height:auto;
-    line-height: 30px;
-}
-.TwoSide li{
-    padding-left: 30px;
-    font-size: 12px;
-}
-.OneSide p:hover{
-    cursor: pointer;
-    border-left: 3px solid #95B8E7;
-    background:#ECF0F5;
-    color:#888;
-}
-.TwoSide li:hover{
-    cursor: pointer;
-    background:#ECF0F5;
-    color:#983838;
-}
-/*点击一级标题添加的类*/
-.addClassOne{
-    border-left: 3px solid #95B8E7;
-    background:#ECF0F5;
-    color:#888;
-}
-/*点击二级标题添加的类*/
-.addClassTwo{
-    cursor: pointer;
-    background:#ECF0F5;
-    color:#983838;
-}
-/*右侧content*/
-section{
-    position:absolute;
-    left: 160px;
-    top:74px;
-}
-
-
-
-
-
-
-
-
-
 
 /*下方footer*/
 .footer{
