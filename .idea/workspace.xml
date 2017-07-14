@@ -2,73 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/static/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/static/images/out.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/.postcssrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/check-versions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/dev-client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/dev-server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/vue-loader.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/webpack.base.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/webpack.dev.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/build/webpack.prod.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/config/dev.env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/config/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/config/prod.env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/App.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/common/bottom.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/common/left.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/common/login.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/common/top.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/components/Home.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/router/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/static/css/HeadAndFooter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/static/css/base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/static/css/content.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuecms-self/src/static/css/login.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/.postcssrc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/check-versions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/dev-client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/dev-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/vue-loader.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/webpack.base.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/webpack.dev.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/build/webpack.prod.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/config/dev.env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/config/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/config/prod.env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/App.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/common/bottom.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/common/left.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/common/login.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/common/top.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/components/Home.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/router/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/static/css/HeadAndFooter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/static/css/base.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/static/css/content.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/static/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/static/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vueadmin/src/static/images/out.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuecms-self/src/common/login.vue" afterPath="$PROJECT_DIR$/vuecms-self/src/common/login.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,7 +17,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="022-vue2.0中的路由参数定义实现url的传值.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue路由/022-vue2.0中的路由参数定义实现url的传值.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -164,6 +110,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vuecms-self/node_modules" />
     <handled-path value="$PROJECT_DIR$/项目工程化管理工具/gulp/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
@@ -187,6 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -199,10 +147,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="框架系列问题" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="框架系列问题" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue路由" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="框架系列问题" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuecms-self" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuecms-self" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,7 +369,8 @@
       <workItem from="1499737546772" duration="9648000" />
       <workItem from="1499827139442" duration="9185000" />
       <workItem from="1499844264151" duration="4864000" />
-      <workItem from="1499907223362" duration="1321000" />
+      <workItem from="1499907223362" duration="1803000" />
+      <workItem from="1499995020969" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="lx">
       <created>1497676369555</created>
@@ -436,11 +470,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499854603557</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="wr">
+      <created>1499940676550</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1499940676550</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132821000" />
+    <option name="totallyTimeSpent" value="135257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -515,13 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/案例（品牌管理案例）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue中wacth与computed的使用企区别/02-computed的使用.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -617,6 +651,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-243">
           <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <marker date="1498900928071" expanded="true" signature="739:843" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,6 +689,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,6 +697,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,55 +860,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/.babelrc">
+    <entry file="file://$PROJECT_DIR$/vueadmin/.babelrc" />
+    <entry file="file://$PROJECT_DIR$/vueadmin/.editorconfig" />
+    <entry file="file://$PROJECT_DIR$/vueadmin/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/vueadmin/.postcssrc.js" />
+    <entry file="file://$PROJECT_DIR$/vueadmin/index.html" />
+    <entry file="file://$PROJECT_DIR$/vueadmin/README.md" />
+    <entry file="file://$PROJECT_DIR$/vueadmin/package.json" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue路由/022-vue2.0中的路由参数定义实现url的传值.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/.postcssrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueadmin/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,7 @@
 <template>
     
     <el-form :model="ruleForm2" :rules="rules2" ref="ruleForm2" label-position="left" label-width="0px" class="demo-ruleForm login-container">
-        <img class="logo" src="../static/images/logo.png">
-        <p class="title">太平保险微信展业工具管理登陆</p>
+  
         <el-form-item prop="account">
             <el-input type="text" v-model="ruleForm2.account" auto-complete="off" placeholder="账号"></el-input>
         </el-form-item>
