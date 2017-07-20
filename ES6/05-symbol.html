@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    "use strict";
+    /*
+    * 1.ES6的一种新的原始数据类型Symbol,表示独一无二的值。它是js的第七种语言类型，
+    * 前6种，undefined、null、Boolean、String、Number、Object
+    *
+    * 2.现在对象的属性名有两种类型：一种是字符串，还有一种是Symbol类型
+    * 一旦是Symbol类型都表示独一无二的，可以保证与其他的属性名是不会冲突的。
+    *
+    * 3.Symbol函数不能使用命令，否则会报错，Symbol是一个原始数据类型的值，而不是一个对象。
+    * 基本上，它是一种类似于字符串的数据类型。
+    *
+    * 4.Symbol可以传参数，参数可以是字符串，也可以是对象，如果是对象，那么就会调用对象的toString方法。
+    * 如果Symbol传入的参数一样的，他们也是不全等的，因为他们是独一无二的。
+    * */
+    let s = Symbol();
+    console.log(typeof s);
+
+
+    const obj = {
+        toString (){
+            return 'abc';
+        }
+    }
+    const sym = Symbol(obj)
+    console.log(sym);
+</script>
+</body>
+</html>
