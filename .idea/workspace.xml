@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/assets/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/static/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/.postcssrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/check-versions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/dev-client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/dev-server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/vue-loader.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/webpack.base.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/webpack.dev.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/webpack.prod.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/config/dev.env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/config/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/config/prod.env.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/App.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/cchild.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/static/.gitkeep" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/condition.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/App.vue" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/App.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/main.js" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/router/index.js" afterPath="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/router/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +23,91 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#140#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+                <marker date="1500541326732" expanded="true" signature="480:483" ph="{&quot;name&quot;: 'condition'...}" />
+                <marker date="1500541326732" expanded="true" signature="480:485" ph="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cchild.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/cchild.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <marker date="1500541090900" expanded="true" signature="260:346" ph="..." />
+                <marker date="1500541090900" expanded="true" signature="260:337" ph="{&quot;name&quot;: 'hello'...}" />
+                <marker date="1500541090900" expanded="true" signature="271:335" ph="{...}" />
+                <marker date="1500541090900" expanded="true" signature="284:331" ph="{&quot;msg&quot;: 'Welcome to Your Vue.js App'...}" />
+                <marker date="1500541090900" expanded="true" signature="430:596" ph="..." />
+                <marker date="1500541090900" expanded="true" signature="439:465" ph="{...}" />
+                <marker date="1500541090900" expanded="true" signature="470:512" ph="{...}" />
+                <marker date="1500541090900" expanded="true" signature="517:563" ph="{...}" />
+                <marker date="1500541090900" expanded="true" signature="567:588" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="condition.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/condition.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding>
+                <marker date="1500541054391" expanded="true" signature="193:261" ph="..." />
+                <marker date="1500541054391" expanded="true" signature="193:252" ph="{&quot;name&quot;: 'condition'...}" />
+                <marker date="1500541054391" expanded="true" signature="207:248" ph="{...}" />
+                <marker date="1500541054391" expanded="true" signature="226:240" ph="{...}" />
+                <marker date="1500541054391" expanded="true" signature="269:279" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,12 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/05-v-for和track-by.html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/06-v-if和v-show指令.html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/07-v-on的注册事件的按键修饰符.html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/08-自定义指令(属性指令和元素指令).html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/09-自定义元素指令.html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/10-过滤器.html" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/10-watch组件选项.html" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/vue动画/013-vue1.0通过使用钩子函数控制动画.html" />
         <option value="$PROJECT_DIR$/测试页面/04-vue模板.html" />
@@ -108,6 +168,12 @@
         <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/main.js" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/router.js" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/config/index.js" />
+        <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/condition.vue" />
+        <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue" />
+        <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/main.js" />
+        <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/App.vue" />
+        <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/router/index.js" />
+        <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/cchild.vue" />
       </list>
     </option>
   </component>
@@ -203,6 +269,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vuedemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="框架系列问题" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="00 vue总结与进阶" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuedemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="框架系列问题" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="00 vue总结与进阶" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuedemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,7 +488,7 @@
       <workItem from="1499844264151" duration="4864000" />
       <workItem from="1499907223362" duration="1321000" />
       <workItem from="1500460446317" duration="3840000" />
-      <workItem from="1500513205118" duration="14242000" />
+      <workItem from="1500513205118" duration="19346000" />
     </task>
     <task id="LOCAL-00001" summary="lx">
       <created>1497676369555</created>
@@ -465,16 +595,23 @@
       <option name="project" value="LOCAL" />
       <updated>1500530855639</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="wr">
+      <created>1500533587236</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1500533587236</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153337000" />
+    <option name="totallyTimeSpent" value="158441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -544,48 +681,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue路由/032-vue2.0中嵌套路由的写法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue组件/01-组件的定义.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue组件/03-组件中注册子组件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS系列问题/对象/07-求参数的平均值.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS系列问题/对象/03-关于变量提升的面试题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/04-template string.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NewSki/00-CSS-Grid布局(网格布局).html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -872,6 +967,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/condition.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1500541054391" expanded="true" signature="193:261" ph="..." />
+            <marker date="1500541054391" expanded="true" signature="193:252" ph="{&quot;name&quot;: 'condition'...}" />
+            <marker date="1500541054391" expanded="true" signature="207:248" ph="{...}" />
+            <marker date="1500541054391" expanded="true" signature="226:240" ph="{...}" />
+            <marker date="1500541054391" expanded="true" signature="269:279" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <marker date="1500541090900" expanded="true" signature="260:346" ph="..." />
+            <marker date="1500541090900" expanded="true" signature="260:337" ph="{&quot;name&quot;: 'hello'...}" />
+            <marker date="1500541090900" expanded="true" signature="271:335" ph="{...}" />
+            <marker date="1500541090900" expanded="true" signature="284:331" ph="{&quot;msg&quot;: 'Welcome to Your Vue.js App'...}" />
+            <marker date="1500541090900" expanded="true" signature="430:596" ph="..." />
+            <marker date="1500541090900" expanded="true" signature="439:465" ph="{...}" />
+            <marker date="1500541090900" expanded="true" signature="470:512" ph="{...}" />
+            <marker date="1500541090900" expanded="true" signature="517:563" ph="{...}" />
+            <marker date="1500541090900" expanded="true" signature="567:588" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1500541326732" expanded="true" signature="480:483" ph="{&quot;name&quot;: 'condition'...}" />
+            <marker date="1500541326732" expanded="true" signature="480:485" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/cchild.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding />
         </state>
       </provider>
