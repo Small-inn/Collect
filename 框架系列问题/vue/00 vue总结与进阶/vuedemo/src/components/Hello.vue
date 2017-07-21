@@ -1,8 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{msg}}</h1>
     <router-link :to="{name: 'condition'}">点击</router-link>
-    <!--<router-link :to="{name: 'cchild'}">点击2</router-link>-->
+    <router-link :to="{name: 'event'}">事件处理</router-link>
+    <router-link :to="{name: 'form'}">表单控件</router-link>
+    <router-link :to="{name: 'com'}">组件</router-link>
     <router-view></router-view>
   </div>
 </template>
