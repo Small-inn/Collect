@@ -1,6 +1,6 @@
 <template>
     <div>
-    <span>我还是个孩子!</span></br>
+    <span>我还是个孩子!</span><br>
     <template v-if="loginType === 'username'">
         <label>username</label>
         <input placeholder="Enter your username" key="username-input">
@@ -33,6 +33,6 @@
     }
 </script>
 <style>
-    
+
 </style>
 

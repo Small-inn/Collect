@@ -14,7 +14,11 @@
     <div id="tdExp">
         <input type="text" v-model="newTd" @keyup.enter="addTd" placeholder="Add todo">
         <ul>
-            <li is="todo-item" v-for="(index,todo) in todoList" :title="todo" @remove="todoList.splice(index,1)"></li>
+            <li is="todo-item"
+                v-for="(index,todo) in todoList"
+                :title="todo"
+                @remove="todoList.splice(index,1)">
+            </li>
         </ul>
     </div>
 </div>

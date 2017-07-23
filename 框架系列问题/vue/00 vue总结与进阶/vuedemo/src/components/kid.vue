@@ -11,6 +11,11 @@
             return {
                 
             }
+        },
+        computed: {
+            normalizedLog() {
+                return this.log.trim().toLowerCase()
+            }
         }
     }
 </script>
