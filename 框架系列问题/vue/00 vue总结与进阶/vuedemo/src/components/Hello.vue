@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{msg}}</h1>
+    <p>{{all}}</p>
     <kid :log="hh"></kid>
+    <button @click="readd">{{readdNum}}</button>
     <router-link :to="{name: 'condition'}">点击</router-link>
     <router-link :to="{name: 'event'}">事件处理</router-link>
     <router-link :to="{name: 'form'}">表单控件</router-link>
@@ -19,8 +21,16 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js Demo',
-      hh:'hello kid'
+      hh:'hello kid',
+      readdNum:0,
+      all:0
     }
+  },
+  methods:{
+    readd() {
+      this.readdNum += 1
+      this.all += 1
+    },
   }
 }
 </script>
