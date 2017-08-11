@@ -18,7 +18,7 @@ let routes = [
     component:Condition,
     children:[
       {
-        path:'/c/cc',
+        path:'/cc',
         name:'cchild',
         component:Cchild
       }
@@ -34,7 +34,7 @@ let routes = [
         name:'form',
         component:Form
       },
-      {
+      { 
         path:'/g',
         name:'com',
         component:Com

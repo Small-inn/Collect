@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{msg}}</h1>
     <p>{{all}}</p>
-    <kid :log="hh"></kid>
+    <kid :log="hh" style="display:block;"></kid>
     <button @click="readd">{{readdNum}}</button>
     <router-link :to="{name: 'condition'}">点击</router-link>
     <router-link :to="{name: 'event'}">事件处理</router-link>
