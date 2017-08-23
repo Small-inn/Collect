@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./plugins/browser.min.js"></script>
+    <script src="./plugins/react.js"></script>
+    <script src="./plugins/react-dom.js"></script>
+</head>
+<body>
+    <div id="box"></div>
+    <script type="text/babel">
+    // this.props对象的属性与组件的属性一一对应，但是有一个例外,this.props.children属性
+    // 这个属性表示组建的所有子节点
+    // this.props.children的值有三种可能，如果当前组件没有子节点，他就是undefined，
+    // 如果有一个子节点，数据类型是object,如果有多个子节点，数据类型就是Array
+    // react提供一个工具方法React.Children对this.props.children,然后用React.Children,map来遍历子节点
+    
+    var NodeList = React.createClass({
+        render:function() {
+            return (
+                <ol>
+                    {
+                        React.Children.map(this.props.children,function (child) { 
+                            return <li>{child}</li>;
+                         })
+                    }
+                </ol>
+            )
+        }
+    });
+
+    ReactDOM.render(
+        <NodeList>
+            <span>hello</span>
+            <span>world</span>
+        </NodeList>,
+        document.getElementById('box')
+    )
+    </script>
+</body>
+</html>
