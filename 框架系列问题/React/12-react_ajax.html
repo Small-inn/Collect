@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./plugins/browser.min.js"></script>
+    <script src="./plugins/react.js"></script>
+    <script src="./plugins/react-dom.js"></script>
+    <script src="./plugins/axios.js"></script>
+</head>
+<body>
+    <div id="box"></div>    
+    <script type="text/babel">
+        var UserList = React.createClass({
+            getInitialState:function () { 
+                return {
+                    username:'',
+                    url:''
+                };
+             },
+             componentDidMount:function () { 
+                 axios.get(this.props.source).then(function (res) { 
+                     console.log(res);
+                     console.log(res.data[0]);
+                     var lastGist = res.data[0];
+                     if(this.isMounted()){
+                         this.setState({
+                             username:lastGist.owner.login,
+                             url:lastGist.html_url
+                         });
+                     }
+                  }.bind(this));
+              },
+              render:function () { 
+                  return (
+                      <div>
+                        {this.state.username}'s last gist is
+                        <a href={this.state.url}>here</a>
+                      </div>
+                  )
+               }
+        });
+
+        ReactDOM.render(
+            <UserList  source="https://api.github.com/users/octocat/gists"  />,
+            document.getElementById('box')
+        )
+    </script>
+</body>
+</html>
