@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 现在有一个数组如下
+        // var arr = [111, 23, 44, 534, 4123, 312, 32, 3123, 424, 552, 24, 55];
+        // 每隔三个切割一次 形成一个新的数组, [
+        //     [111, 23, 44],
+        //     [534, 4123, 312],
+        //     [32, 3123, 424],
+        //     [24, 55]
+        // ]
+        // 再在新的数组里取最大值和index 形成最终数组
+        // var arr = [111, 23, 44, 534, 4123, 312, 32, 3123, 424, 552, 24, 55];
+        // var res = [];
+        // for (var i = 0; i < arr.length; i++) {
+        //     if (arr.length - i >= 3) {
+        //         res.push(arr.slice(i, i + 3))
+        //     }
+        // }
+        // console.log(res);
+
+        var arr = [111, 23, 44, 534, 4123, 312, 32, 3123, 424, 552, 24, 55];
+        var result = [];
+        for (var i = 0, j = 0; i < arr.length; i += 3, j++) {
+            result.push({
+                'index': j,
+                'max': Math.max.apply(null, arr.slice(i, i + 3))
+            });
+        }
+        console.log(result);
+    </script>
+</body>
+
+</html>
