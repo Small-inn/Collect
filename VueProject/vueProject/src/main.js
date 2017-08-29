@@ -6,6 +6,8 @@ import VueRouter from 'vue-router'
 import routes from './router'
 import moment from 'moment'
 
+import store from './vuex/store'
+
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.min.css'
 
@@ -24,6 +26,7 @@ Vue.filter('datafmt',function(input,fmtstr){
   return moment(input).format(fmtstr)
 })
 
+
 const router = new VueRouter({
   mode:'history',
   routes,
@@ -33,6 +36,7 @@ const router = new VueRouter({
 
 new Vue({
   router,
+  store,
   render:h=>h(App),
   mounted() {
     console.log(this);

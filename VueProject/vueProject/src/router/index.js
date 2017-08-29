@@ -4,6 +4,7 @@ import Conect from '../components/Conect.vue'
 import Set from '../components/Set.vue'
 import Newslist from '../components/news/newslist.vue'
 import Newsshow from '../components/news/newsshow.vue'
+import Testvuex from '../components/sets/testvuex.vue'
 
 let routes = [
   {
@@ -24,6 +25,11 @@ let routes = [
     path:'/news/newsshow/:newsid',
     name:'newsshow',
     component:Newsshow
+  },
+  {
+    path:'/sets/testvuex',
+    name:'testvuex',
+    component:Testvuex
   },
   {
     path:'/Email',

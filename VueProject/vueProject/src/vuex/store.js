@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import * as actions from './actions'
+import * as getters from './getters'
 
 Vue.use(Vuex)
 
@@ -7,3 +9,20 @@ Vue.use(Vuex)
 const state = {
     count: 10
 }
+// 定义需要的 mutations
+const mutations = {
+    INCREMENT(state){
+        state.count++
+    },
+    DECREMENT(state){
+        state.count--
+    }
+}
+
+// 创建store实例
+export default new Vuex.Store({
+    actions,
+    getters,
+    state,
+    mutations
+})
