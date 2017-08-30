@@ -10,41 +10,34 @@ let routes = [
   {
     path: '/',
     redirect: '/Home'
-  },
-  {
+  }, {
     path: '/Home',
     name: 'Home',
     component: Home
-  },
-  {
-    path:'/news/newslist',
-    name:'newslist',
-    component:Newslist
-  },
-  {
-    path:'/news/newsshow/:newsid',
-    name:'newsshow',
-    component:Newsshow
-  },
-  {
-    path:'/sets/testvuex',
-    name:'testvuex',
-    component:Testvuex
-  },
-  {
-    path:'/Email',
-    name:'Email',
-    component:Email
-  },
-  {
-    path:'/Conect',
-    name:'Conect',
-    component:Conect
-  },
-  {
-    path:'/Set',
-    name:'Set',
-    component:Set
+  }, {
+    path: '/news/newslist',
+    name: 'newslist',
+    component: Newslist
+  }, {
+    path: '/news/newsshow/:newsid',
+    name: 'newsshow',
+    component: Newsshow
+  }, {
+    path: '/sets/testvuex',
+    name: 'testvuex',
+    component: Testvuex
+  }, {
+    path: '/Email',
+    name: 'Email',
+    component: Email
+  }, {
+    path: '/Conect',
+    name: 'Conect',
+    component: Conect
+  }, {
+    path: '/Set',
+    name: 'Set',
+    component: Set
   }
 ];
 
