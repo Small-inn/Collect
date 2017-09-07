@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<a href="javascript:alert('清除缓存成功')">清除缓存</a>
+<script>
+    //正则实现
+    var moneny = '1234567890'
+    var format = moneny.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    console.log(format);
+    //非正则实现
+    function formatCash(str) {
+        return str.split('').reverse().reduce((pre,next,index) => {
+            return ((index % 3) ? next : (next + ',')) + pre
+        })
+    }
+    console.log(formatCash(moneny));
+</script>
+</body>
+</html>
