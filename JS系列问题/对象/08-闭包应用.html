@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var counter = (function () {
+            var privateCount = 0;
+            function change(val) {
+                privateCount += val;
+            }
+            return {
+                increment:function () {
+                    change(1)
+                },
+                decrement:function () {
+                    change(-1)
+                },
+                value:function () {
+                    return privateCount;
+                }
+            }
+        })()
+
+        console.log(counter.value());
+        counter.increment();
+        console.log(counter.value());
+    </script>
+</body>
+</html>
