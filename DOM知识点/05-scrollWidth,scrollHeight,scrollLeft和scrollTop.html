@@ -1,38 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            list-style:none;
-        }
-        #box{
-            width: 200px;
-            height: 200px;
-            background-color: hotpink;
-            padding: 10px;
-            margin: 10px;
-            border: 5px solid #000;
-        }
+
     </style>
 </head>
 <body>
-    <div id="box">
-        
-    </div>
-    <script>
-        var box = document.getElementById('box')
-        console.log(box.scrollLeft);
-        console.log(box.scrollTop);
-//      只包含padding值
-        console.log(box.scrollWidth);
-        console.log(box.scrollHeight);
-    </script>
+<div id="box" style="width:100px;height:100px;background-color:hotpink;"></div>
+<script>
+    var box =document.getElementById('box');
+    // offset是获取自身的属性的，它是一个只读属性,只能获取，不能设置。设置使用width;
+    // offset = width + padding + border;
+    console.log(box.offsetWidth);
+    console.log(box.offsetHeight);
+    console.log(box.offsetTop);
+    console.log(box.offsetLeft);
+    // scroll = width + padding
+    console.log(box.scrollWidth);
+    console.log(box.scrollHeight);
+    console.log(box.scrollLeft);
+    console.log(box.scrollTop);
+    // client = width + padding 当内容不超出的和scroll**大小是一样的
+    console.log(box.clientWidth);
+    console.log(box.clientHeight);
+    console.log(box.clientLeft);
+    console.log(box.clientTop);
+</script>
 </body>
 </html>
