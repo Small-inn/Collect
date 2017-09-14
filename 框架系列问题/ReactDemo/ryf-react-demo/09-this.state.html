@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./plugins/browser.min.js"></script>
+    <script src="./plugins/react.js"></script>
+    <script src="./plugins/react-dom.js"></script>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script type="text/babel">
+        var LikeButton = React.createClass({
+            getInitialState:function () {   
+                return {liked:false};
+             },
+             handleClick:function (e) { 
+                 this.setState({liked:!this.state.liked})
+              },
+              render:function () { 
+                  var text = this.state.liked ? 'like':'haven\'t liked';
+                  return (
+                      <p onClick={this.handleClick}>
+                        You {text} this.Click to toggle.
+                      </p>
+                  )
+               }
+        })
+
+        ReactDOM.render(
+            <LikeButton />,
+            document.getElementById('box')
+        )
+    </script>
+</body>
+</html>

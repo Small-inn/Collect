@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../plugins/browser.min.js"></script>
+    <script src="../plugins/react.js"></script>
+    <script src="../plugins/react-dom.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div id="app1"></div>
+    <script type="text/babel">
+        class CptRender extends React.Component {
+            render(){
+                return <h1>组件渲染:{this.props.name}</h1>
+            }
+        }
+        const ele = <CptRender name="Lx" />;
+
+        ReactDOM.render(
+            ele,
+            document.getElementById('app')
+        );
+
+    
+
+        function CptAdd(props) { 
+            return <h1>组件组合, {props.name}</h1>;
+         }
+
+        function App() { 
+            return (
+                <div>
+                    <CptAdd name='hh' />
+                    <CptAdd name='xx' />
+                    <CptAdd name='ee' />
+                </div>
+            );
+         }
+         ReactDOM.render(
+             <App />,
+             document.getElementById('app1')
+         )
+        
+    </script>
+</body>
+
+</html>

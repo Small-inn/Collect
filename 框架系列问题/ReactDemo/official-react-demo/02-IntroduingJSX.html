@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../plugins/browser.min.js"></script>
+    <script src="../plugins/react.js"></script>
+    <script src="../plugins/react-dom.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+       
+       function formatName(user) { 
+           return user.firstName + '' + user.lastName;
+        }
+
+        const user = {
+            firstName: '赵四',
+            lastName: '尼古拉斯'
+        }
+        const element = 
+            <div>
+                <h1>这世界本来真话就不多</h1>
+                <span>{formatName(user)}</span>
+            </div>;
+
+        ReactDOM.render(       
+            element,
+            document.getElementById('app')
+        )
+    </script>
+</body>
+
+</html>

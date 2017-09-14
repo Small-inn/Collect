@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../plugins/browser.min.js"></script>
+    <script src="../plugins/react.js"></script>
+    <script src="../plugins/react-dom.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .myMotto{
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div id="app1"></div>
+    <script type="text/babel">
+        const ele = <div><h1 className="myMotto">所以希望大家真诚相待</h1><span>对，我就是这么的骚...</span></div>;
+        ReactDOM.render(
+            ele,
+            document.getElementById('app')
+        )
+
+
+        function tick() { 
+            const element = (
+                <div>
+                    <h1>打我啊!</h1>
+                    <h2>现在是{new Date().toLocaleTimeString()}</h2>
+                </div>
+            );
+            ReactDOM.render(
+                element,
+                document.getElementById('app1')
+            )
+         }
+
+         setInterval(tick,1000);
+    </script>
+</body>
+
+</html>
