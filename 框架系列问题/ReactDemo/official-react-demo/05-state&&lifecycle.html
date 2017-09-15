@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../plugins/browser.min.js"></script>
+    <script src="../plugins/react.js"></script>
+    <script src="../plugins/react-dom.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        class Clock extends React.Compontent {
+            constructor(props){
+                super(props);
+                this.state = {date:new Date()};
+            }
+
+            render() {
+                return (
+                    <div>
+                        <h1>一个叫木头，一个叫马尾</h1>
+                        <h2>现在是:{this.state.date.toLocaleTimeString()}</h2>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(
+            <Clock />,
+            document.getElementById('app')
+        )
+    </script>
+</body>
+
+</html>
