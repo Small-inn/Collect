@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/H5C3系列问题/11-transform详解.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/01-hello_react.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/02-JSX语法.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/03-JSX语法之数组.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/04-组件.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/05-this.props.children.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/06-PropTypes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/07-PropTypes02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/08-获取真实的DOM节点.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/09-this.state.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/10-表单.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/11-组件的生命周期.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/12-react_ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/13-react_promise.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/plugins/axios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/plugins/browser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/plugins/react-dom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/框架系列问题/React/plugins/react.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DOM知识点/05-scrollWidth,scrollHeight,scrollLeft和scrollTop.html" afterPath="$PROJECT_DIR$/DOM知识点/05-scrollWidth,scrollHeight,scrollLeft和scrollTop.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CSS系列问题/04-黑白图像.html" afterPath="$PROJECT_DIR$/CSS系列问题/04-滤镜.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,103 +34,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="02-class,extend和super.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="02-class,extend和super.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ES6/02-class,extend和super.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01-只接受数字输入.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS系列问题/表单代码片段/01-只接受数字输入.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06-animate动画进一步封装.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM知识点/06-animate动画进一步封装.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1215">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="05-scrollWidth,scrollHeight,scrollLeft和scrollTop.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM知识点/05-scrollWidth,scrollHeight,scrollLeft和scrollTop.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11-transform详解.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/H5C3系列问题/11-transform详解.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04-滤镜.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CSS系列问题/04-滤镜.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04-animate动画的封装.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM知识点/04-animate动画的封装.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1215">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="07-Promise对象.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/07-Promise对象.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03-箭头函数.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/03-箭头函数.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="09-金钱格式化.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS系列问题/对象/09-金钱格式化.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="108">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -138,9 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue组件/05-vue组件实现父组件传值给子组件.html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue组件/06-vue组件实现子组件传值给父组件.html" />
-        <option value="$PROJECT_DIR$/框架系列问题/vue/vue基础指令/12-vue通过v-ref获取dom对象.html" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/10-watch组件.html" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/vue路由/vue1.0中的路由使用.html" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/vue路由/02-vue2.0中的路由使用.html" />
@@ -179,7 +98,6 @@
         <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/cchild.vue" />
         <option value="$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/src/components/Hello.vue" />
         <option value="$PROJECT_DIR$/JS系列问题/对象/08-闭包应用.html" />
-        <option value="$PROJECT_DIR$/ES6/02-class,extend和super.html" />
         <option value="$PROJECT_DIR$/ES6/07-Promise对象.html" />
         <option value="$PROJECT_DIR$/ES6/03-箭头函数.html" />
         <option value="$PROJECT_DIR$/JS系列问题/对象/09-金钱格式化.html" />
@@ -189,6 +107,10 @@
         <option value="$PROJECT_DIR$/H5C3系列问题/11-transform详解.html" />
         <option value="$PROJECT_DIR$/CSS系列问题/04-黑白图像.html" />
         <option value="$PROJECT_DIR$/CSS系列问题/04-滤镜.html" />
+        <option value="$PROJECT_DIR$/框架系列问题/React/02-JSX语法.html" />
+        <option value="$PROJECT_DIR$/框架系列问题/React/11-组件的生命周期.html" />
+        <option value="$PROJECT_DIR$/ES6/02-class,extend和super.html" />
+        <option value="$PROJECT_DIR$/框架系列问题/React/00-README.md" />
       </list>
     </option>
   </component>
@@ -205,6 +127,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/框架系列问题/React/my-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/项目工程化管理工具/gulp/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
@@ -229,6 +152,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,7 +175,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JS系列问题" />
+              <option name="myItemId" value="框架系列问题" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,25 +189,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JS系列问题" />
+              <option name="myItemId" value="框架系列问题" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="兼容性问题代码" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Collect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Collect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5C3系列问题" />
+              <option name="myItemId" value="ReactDemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,13 +207,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CSS系列问题" />
+              <option name="myItemId" value="框架系列问题" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReactDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="official-react-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ES6" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,7 +375,11 @@
       <workItem from="1500627961243" duration="37000" />
       <workItem from="1504689191941" duration="1491000" />
       <workItem from="1504748549478" duration="11930000" />
-      <workItem from="1504832462623" duration="6368000" />
+      <workItem from="1504832462623" duration="6388000" />
+      <workItem from="1505200021111" duration="1008000" />
+      <workItem from="1505282555796" duration="2133000" />
+      <workItem from="1505352611091" duration="7462000" />
+      <workItem from="1505437551503" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="lx">
       <created>1497676369555</created>
@@ -586,14 +521,28 @@
       <option name="project" value="LOCAL" />
       <updated>1504835136376</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="0907">
+      <created>1504865295722</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1504865295722</updated>
+    </task>
+    <task id="LOCAL-00022" summary="0914">
+      <created>1505383560432</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1505383560432</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182932000" />
+    <option name="totallyTimeSpent" value="193582000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2514881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -661,81 +610,14 @@
     <MESSAGE value="lx" />
     <MESSAGE value="wr" />
     <MESSAGE value="0907" />
-    <option name="LAST_COMMIT_MESSAGE" value="0907" />
+    <MESSAGE value="0914" />
+    <option name="LAST_COMMIT_MESSAGE" value="0914" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ES6/01-对象的扩充.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/05-symbol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/11-vue-resource的请求.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/13-vue的生命周期钩子函数演示.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue基础指令/13-class与style绑定.html" />
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/01-条件渲染.html" />
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/main.js" />
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/router.js" />
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/vue基础指令/06-v-if和v-show指令.html" />
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/webpack.dev.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/webpack.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/vue-loader.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/build/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/config/dev.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/框架系列问题/vue/00 vue总结与进阶/vuedemo/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -824,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2376">
           <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1728">
           <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,49 +819,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/02-class,extend和super.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS系列问题/表单代码片段/01-只接受数字输入.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="567">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM知识点/06-animate动画进一步封装.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM知识点/04-animate动画的封装.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM知识点/05-scrollWidth,scrollHeight,scrollLeft和scrollTop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="702">
           <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,25 +854,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-243">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/H5C3系列问题/11-transform详解.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="729">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS系列问题/04-滤镜.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="594">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/React/12-react_ajax.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/React/02-JSX语法.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/React/05-this.props.children.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/React/11-组件的生命周期.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/React/04-组件.html" />
+    <entry file="file://$PROJECT_DIR$/ES6/01-对象的扩充.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/11-组件的生命周期.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/React/00-README.md" />
+    <entry file="file://$PROJECT_DIR$/ES6/02-class,extend和super.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/08-获取真实的DOM节点.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/10-表单.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/01-hello_react.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/02-JSX语法.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/03-JSX语法之数组.html" />
+    <entry file="file://$PROJECT_DIR$/框架系列问题/ReactDemo/04-组件.html" />
   </component>
 </project>
