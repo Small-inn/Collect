@@ -22,11 +22,22 @@
     <div id="app"></div>
     <script type="text/babel">
         class Clock extends React.Compontent {
+            // 使用类构造函数来改变初始化状态this.state
             constructor(props){
                 super(props);
                 this.state = {date:new Date()};
             }
-
+            componentDidMount(){
+                this.timeID = setTnterval(() => this.tick(),1000)
+            }
+            componentWillMount(){
+                clearInterval(this.timeID);
+            }
+            tick(){
+                this.setState({
+                    date:new Date()
+                });
+            }
             render() {
                 return (
                     <div>
