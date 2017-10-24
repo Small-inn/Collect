@@ -47,3 +47,13 @@ function warnUser(): void{
 function error(message:string): never{
     throw new Error(message);
 }
+// 10.0 类型断言
+// 通过类型断言可以告诉编辑器，类型断言好比其他语言里的类型转换，
+// 但是不进行特殊的数据检查和解构。
+// 类型断言两种形式：
+// 10.1 尖括号语法
+let someValue:any = 'this is  string';
+let strLength:number = (<string>someValue).length;
+// 10.2 as语法
+let someValueOne: any = 'this is a string';
+let strLengthOne: number = (someValueOne as string).length;
