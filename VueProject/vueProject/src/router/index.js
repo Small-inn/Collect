@@ -1,10 +1,11 @@
 import Home from '../components/Home.vue'
 import Email from '../components/Email.vue'
-import Conect from '../components/Conect.vue'
+import Shopcar from '../components/Shopcar.vue'
 import Set from '../components/Set.vue'
 import Newslist from '../components/news/newslist.vue'
 import Newsshow from '../components/news/newsshow.vue'
 import Testvuex from '../components/sets/testvuex.vue'
+import Good from '../components/good/good.vue'
 
 let routes = [
   {
@@ -27,13 +28,17 @@ let routes = [
     name: 'testvuex',
     component: Testvuex
   }, {
+    path: '/good/good',
+    name: 'good',
+    component: Good
+  }, {
     path: '/Email',
     name: 'Email',
     component: Email
   }, {
-    path: '/Conect',
-    name: 'Conect',
-    component: Conect
+    path: '/Shopcar',
+    name: 'Shopcar',
+    component: Shopcar
   }, {
     path: '/Set',
     name: 'Set',

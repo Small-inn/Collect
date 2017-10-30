@@ -20,7 +20,7 @@
         </span>
         <span class="mui-tab-label">会员</span>
       </router-link>
-      <router-link class="mui-tab-item" :to="{name:'Conect'}">
+      <router-link class="mui-tab-item" :to="{name:'Shopcar'}">
         <span class="mui-icon mui-icon-contact"></span>
         <span class="mui-tab-label">购物车</span>
       </router-link>

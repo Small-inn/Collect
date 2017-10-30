@@ -1,14 +1,9 @@
 <template>
   <section>
-    <Cd>
-      <template scope="props">
-        <span>{{props.text}}</span>
-      </template>
-    </Cd>
+    <h2>购物车</h2>
   </section>
 </template>
 <script>
-    import Cd from '../components/good/child.vue'
     export default {
       data () {
         return {
@@ -19,7 +14,7 @@
 
       },
       components:{
-        Cd
+       
       }
     }
 </script>

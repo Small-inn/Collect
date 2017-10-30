@@ -40,5 +40,6 @@ new Vue({
   render:h=>h(App),
   mounted() {
     console.log(this);
+    console.log(this.$router.options.routes);
   }
 }).$mount('#app')
