@@ -5,6 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/VueProject/vueProject/src/components/Conect.vue" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VueProject/vueProject/src/App.vue" afterPath="$PROJECT_DIR$/VueProject/vueProject/src/App.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VueProject/vueProject/src/components/Email.vue" afterPath="$PROJECT_DIR$/VueProject/vueProject/src/components/Email.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VueProject/vueProject/src/components/Home.vue" afterPath="$PROJECT_DIR$/VueProject/vueProject/src/components/Home.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VueProject/vueProject/src/components/Set.vue" afterPath="$PROJECT_DIR$/VueProject/vueProject/src/components/Set.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VueProject/vueProject/src/components/good/good.vue" afterPath="$PROJECT_DIR$/VueProject/vueProject/src/components/good/good.vue" />
@@ -679,7 +680,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219211000" />
+    <option name="totallyTimeSpent" value="219345000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
