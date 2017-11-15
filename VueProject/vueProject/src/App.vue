@@ -21,7 +21,9 @@
         <span class="mui-tab-label">会员</span>
       </router-link>
       <router-link class="mui-tab-item" :to="{name:'Shopcar'}">
-        <span class="mui-icon mui-icon-contact"></span>
+        <span class="mui-icon mui-icon-contact">
+          <span class="mui-badge" ref="bige">0</span>
+          </span>
         <span class="mui-tab-label">购物车</span>
       </router-link>
       <router-link class="mui-tab-item" :to="{name:'Set'}">
@@ -37,32 +39,33 @@ export default {
   data() {
     return {
       isShow: false
-    }
+    };
   },
   watch: {
     // 监听路由变化
-    '$route': function (to, from) {
-      if (to.path == '/Home') {
-        this.isShow = false
+    $route: function(to, from) {
+      if (to.path == "/Home") {
+        this.isShow = false;
       } else {
-        this.isShow = true
+        this.isShow = true;
       }
     }
   },
   methods: {
     // 返回上一级
     goback() {
-      this.$router.go(-1)
+      this.$router.go(-1);
     }
   },
-
-
-}
+  mounted(){
+    this.$refs.bige.innerHTML = count;
+  }
+};
 </script>
 
 <style scoped lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
