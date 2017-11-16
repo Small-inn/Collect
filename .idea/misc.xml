@@ -3,4 +3,7 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/JS系列问题/重新认识JavaScript/面向对象/07-变量提升.md" />
+  </component>
 </project>
