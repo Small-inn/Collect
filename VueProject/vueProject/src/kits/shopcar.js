@@ -3,16 +3,16 @@
 const key = 'shopcar';
 
 function getJsonToObj() {
-    var lsString = localStorage.getItem(key);
-    var list = [];
-    if (lsString) {
-        list = JSON.parse(lsString);
-    }
-    return list;
+  var lsString = localStorage.getItem(key);
+  var list = [];
+  if (lsString) {
+    list = JSON.parse(lsString);
+  }
+  return list;
 }
 
 function setItem(obj) {
-    var list = getJsonToObj();
-    list.push(obj);
-    localStorage.setItem(key,JSON.stringify(list));
+  var list = getJsonToObj();
+  list.push(obj);
+  localStorage.setItem(key, JSON.stringify(list));
 }

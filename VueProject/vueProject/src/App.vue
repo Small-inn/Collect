@@ -38,7 +38,7 @@
 export default {
   data() {
     return {
-      isShow: false
+      isShow: false,
     };
   },
   watch: {
@@ -58,7 +58,7 @@ export default {
     }
   },
   mounted(){
-    this.$refs.bige.innerHTML = count;
+    // this.$refs.bige.innerHTML = count;
   }
 };
 </script>

@@ -7,15 +7,16 @@ Vue.use(Vuex)
 
 // 全局状态
 const state = {
-    count: 10
+    counts: 10
 }
+
 // 定义需要的 mutations
 const mutations = {
     INCREMENT(state){
-        state.count++
+        state.counts++
     },
     DECREMENT(state){
-        state.count--
+        state.counts--
     }
 }
 

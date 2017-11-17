@@ -1,7 +1,7 @@
 <template>
   <section>
       <Cd>
-        <template scope="props">
+        <template slot-scope="props">
           <span>{{props.text}}</span>
         </template>
       </Cd>
@@ -23,7 +23,7 @@
       }
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>
 
