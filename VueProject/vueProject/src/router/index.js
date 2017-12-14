@@ -6,6 +6,7 @@ import Newslist from '../components/news/newslist.vue'
 import Newsshow from '../components/news/newsshow.vue'
 import Testvuex from '../components/sets/testvuex.vue'
 import Good from '../components/good/good.vue'
+import Word from '../components/words/words.vue'
 
 let routes = [
   {
@@ -43,6 +44,10 @@ let routes = [
     path: '/Set',
     name: 'Set',
     component: Set
+  },{
+    path: '/word',
+    name: 'word',
+    component: Word
   }
 ];
 

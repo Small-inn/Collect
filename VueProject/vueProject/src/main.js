@@ -6,6 +6,8 @@ import VueRouter from 'vue-router'
 import routes from './router'
 import moment from 'moment'
 
+import Mock from './data'
+
 import store from './vuex/store'
 
 import MintUI from 'mint-ui'
@@ -15,6 +17,7 @@ import '../static/mui/css/mui.css'
 import '../static/mui/css/icons-extra.css'
 
 Vue.config.productionTip = false
+
 
 Vue.use(VueRouter)
 Vue.use(MintUI)
@@ -39,7 +42,7 @@ new Vue({
   store,
   render:h=>h(App),
   mounted() {
-    console.log(this);
-    console.log(this.$router.options.routes);
+    // console.log(this);
+    // console.log(this.$router.options.routes);
   }
 }).$mount('#app')

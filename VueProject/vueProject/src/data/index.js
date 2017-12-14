@@ -1,7 +1,4 @@
-import Mock from './mock';
+import Mock from './mock.js';
 
-const data = Mock.mock('/api/data', (req, res) => {
-    return {
-        data: ['a','b']
-    }
-})
+export default mock;
+

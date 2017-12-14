@@ -29,7 +29,7 @@
           </router-link>
         </li>
         <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
-          <router-link to="">
+          <router-link :to="{name: 'word'}">
             <span class="mui-icon mui-icon-location"></span>
             <div class="mui-media-body">留言反馈</div>
           </router-link>
