@@ -2,9 +2,9 @@
   <div class="tmpl">
     <!--1.0  轮播-->
     <mt-swipe class="swipe" :auto="4000">
-      <mt-swipe-item>1</mt-swipe-item>
-      <mt-swipe-item>2</mt-swipe-item>
-      <mt-swipe-item>3</mt-swipe-item>
+      <mt-swipe-item v-for="item in swipeList" :key="item.id">
+        <img :src="item.img"/>
+      </mt-swipe-item>
     </mt-swipe>
   
     <!--2.0 九宫格-->
@@ -55,24 +55,33 @@
         <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
           <router-link to="">
             <span class="mui-icon mui-icon-phone"></span>
-            <div class="mui-media-body">Phone</div>
+            <div class="mui-media-body">物流查询</div>
           </router-link>
         </li>
       </ul>
     </div>
+    <!--3.0 其他-->
+    
   </div>
 </template>
 
 <script>
+import { swiperList } from '../api/interface.js'
 export default {
   data() {
     return {
-      swipeList:[
-        {src:'/src/assets/luboImg/dazhe.jpg'},
-        {src:'/src/assets/luboImg/diannao.jpg'},
-        {src:'/src/assets/luboImg/naifen.jpg'}
-      ]
+      swipeList:[]
     }
+  },
+  method:{
+
+  },
+  mounted(){
+    swiperList().then(res =>{
+      console.log(res);
+      this.swipeList = res.imgList;
+     
+    })
   }
 }
 </script>
@@ -81,6 +90,9 @@ export default {
 <style scoped lang="scss">
     .swipe {
       height: 200px;
+    }
+    .mui-content{
+      background-color:#F6F6F6;
     }
     .mui-grid-view.mui-grid-9 .mui-table-view-cell {
       border-right: none;

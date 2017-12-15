@@ -1,4 +1,4 @@
-import Mock from './mock.js';
+import Mock from './mock';
 
-export default mock;
+export default Mock;
 

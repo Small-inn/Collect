@@ -7,6 +7,7 @@ import routes from './router'
 import moment from 'moment'
 
 import Mock from './data'
+Mock.bootStrap()
 
 import store from './vuex/store'
 
