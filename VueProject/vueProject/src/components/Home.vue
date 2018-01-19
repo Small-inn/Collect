@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import { swiperList } from '../api/interface.js'
+import API from '../api/interface.js'
 export default {
   data() {
     return {
@@ -77,7 +77,7 @@ export default {
 
   },
   mounted(){
-    swiperList().then(res =>{
+    API.swiperList().then(res =>{
       console.log(res);
       this.swipeList = res.imgList;
      

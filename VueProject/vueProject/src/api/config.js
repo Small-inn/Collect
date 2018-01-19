@@ -17,3 +17,8 @@ const $axios = (url, method = 'get', params) => {
 
 export default $axios;
 
+
+
+
+
+

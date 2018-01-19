@@ -10,7 +10,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios-mock-adapter": "^1.11.0",
     "mint-ui": "^2.2.9",
+    "mockjs": "^1.0.1-beta3",
     "moment": "^2.18.1",
     "vue": "^2.3.3",
     "vue-router": "^2.6.0",
