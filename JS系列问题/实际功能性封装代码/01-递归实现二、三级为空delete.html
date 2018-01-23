@@ -9,13 +9,41 @@
 </head>
 <body>
 <script>
-    function rmnull(arg){
-        if(arg.data === 0){
-            delete  arg.data;
-        }else {
-            arg.data.forEach(function (child) {
-                rmnull(child)
-            })
+    let glOrganTreeData = null;
+    export const glOrganTree = () => {
+        if (!!glOrganTreeData) {
+            return Promise.resolve(glOrganTreeData);
+        } else {
+            return axios.get(`/list/glOrganTree`)
+                .then(res => {
+                    glOrganTreeData = formatData(res.data);
+                    return glOrganTreeData;
+                });
+        }
+    };
+    function formatData(data) {
+        if (!(data instanceof Array)) {
+            console.error('核销明细所属机构数据不是Array类型');
+            return;
+        }
+
+        data.forEach(function (ele) {
+            formatRecursively(ele);
+        });
+
+        return data;
+
+        function formatRecursively(data) {
+            if (data.children instanceof Array) {
+                if (data.children.length === 0) {
+                    delete data.children;
+                } else {
+                    data.children
+                        .forEach(function (child) {
+                            formatRecursively(child);
+                        });
+                }
+            }
         }
     }
 </script>
