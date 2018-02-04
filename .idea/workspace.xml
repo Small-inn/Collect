@@ -1,87 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/StudyReact/一-简单的例子/01-LikeButton.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/StudyReact/一-简单的例子/02-compoentThink.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/UPGRADE_GUIDE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/dist/axios.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/dist/axios.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/dist/axios.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/dist/axios.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/index.d.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/adapters/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/adapters/http.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/adapters/xhr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/axios.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/cancel/Cancel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/cancel/CancelToken.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/cancel/isCancel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/Axios.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/InterceptorManager.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/createError.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/dispatchRequest.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/enhanceError.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/settle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/core/transformData.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/defaults.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/bind.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/btoa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/buildURL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/combineURLs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/cookies.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/deprecatedMethod.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/isAbsoluteURL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/isURLSameOrigin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/normalizeHeaderName.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/parseHeaders.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/helpers/spread.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/lib/utils.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/axios/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/.coveralls.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/.eslintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/.npmignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/karma.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/node.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/src/browser.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/src/debug.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/debug/src/node.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/follow-redirects/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/follow-redirects/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/follow-redirects/http.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/follow-redirects/https.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/follow-redirects/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/follow-redirects/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/is-buffer/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/is-buffer/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/is-buffer/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/is-buffer/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/is-buffer/test/basic.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/ms/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/ms/license.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/ms/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/node_modules/ms/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/VueProject/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/React/my-app/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/框架系列问题/React/my-app/src/container/home.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/框架系列问题/React/my-app/package.json" afterPath="$PROJECT_DIR$/框架系列问题/React/my-app/package.json" />
-      <change beforePath="$PROJECT_DIR$/框架系列问题/React/my-app/src/App.js" afterPath="$PROJECT_DIR$/框架系列问题/React/my-app/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/框架系列问题/React/my-app/src/index.js" afterPath="$PROJECT_DIR$/框架系列问题/React/my-app/src/index.js" />
-    </list>
+    <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -182,8 +102,8 @@
       <file leaf-file-name="mock.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VueProject/vueProject/src/data/mock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="405">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -291,7 +211,7 @@
     <handled-path value="$PROJECT_DIR$/框架系列问题/React/my-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/项目工程化管理工具/gulp/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -517,7 +437,7 @@
       <workItem from="1513320196031" duration="1666000" />
       <workItem from="1513331810619" duration="104000" />
       <workItem from="1513608259970" duration="1047000" />
-      <workItem from="1517750644298" duration="284000" />
+      <workItem from="1517750644298" duration="403000" />
     </task>
     <task id="LOCAL-00001" summary="lx">
       <created>1497676369555</created>
@@ -778,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513609284074</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="0204">
+      <created>1517750954278</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1517750954278</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263084000" />
+    <option name="totallyTimeSpent" value="263203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,8 +721,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <editor active="true" />
     <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16542949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32700893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -803,7 +732,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32700893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36396182" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36396182" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -813,7 +742,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -884,7 +812,8 @@
     <MESSAGE value="1129" />
     <MESSAGE value="1214" />
     <MESSAGE value="1218" />
-    <option name="LAST_COMMIT_MESSAGE" value="1218" />
+    <MESSAGE value="0204" />
+    <option name="LAST_COMMIT_MESSAGE" value="0204" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1254,8 +1183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VueProject/vueProject/src/data/mock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="405">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
