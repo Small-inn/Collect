@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="0204">
+    <list default="true" id="71ddb29f-18c6-48a3-9915-2da8d2b692e1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CSS系列问题/08-两边固定，中间自适应.html" afterPath="$PROJECT_DIR$/CSS系列问题/08-两边固定，中间自适应.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -441,7 +440,7 @@
       <workItem from="1513331810619" duration="104000" />
       <workItem from="1513608259970" duration="1047000" />
       <workItem from="1517750644298" duration="1898000" />
-      <workItem from="1518959409182" duration="1792000" />
+      <workItem from="1518959409182" duration="1930000" />
     </task>
     <task id="LOCAL-00001" summary="lx">
       <created>1497676369555</created>
@@ -709,11 +708,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517750954278</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="0218">
+      <created>1518968317523</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1518968317523</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266490000" />
+    <option name="totallyTimeSpent" value="266628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +732,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163309" sideWeight="0.49522674" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32700893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -817,7 +822,8 @@
     <MESSAGE value="1214" />
     <MESSAGE value="1218" />
     <MESSAGE value="0204" />
-    <option name="LAST_COMMIT_MESSAGE" value="0204" />
+    <MESSAGE value="0218" />
+    <option name="LAST_COMMIT_MESSAGE" value="0218" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
